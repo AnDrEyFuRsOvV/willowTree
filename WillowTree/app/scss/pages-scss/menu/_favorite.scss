@@ -1,0 +1,485 @@
+@import '../../vars';
+@import '../../fonts';
+@import '../../reset';
+@import '../../libs';
+@import '../../global';
+@import "../../media";
+// Favorites
+.favorite{
+    &__box{
+        @extend %d-f; // Смотреть файл _vars.scss
+        align-items: center;
+        flex-direction: column;
+        margin-top: 115px;
+        margin-left: 300px;
+    }
+    &__text {
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+    &__title {
+        @extend %font_u_700;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        color: #3D405B;
+        margin-bottom: 10px;
+    }
+    &__descr {
+        @extend %font_u_400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #3D405B;
+        text-align: center;
+    }
+    &__body{
+        margin-left: 30px;
+    }
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__card{
+        margin-right: 10px;
+        max-width: 200px;
+        margin-bottom: 30px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__card-product{
+        @extend %calc-height-B-2; // Смотреть файл _vars.scss
+        background-image: url('../images/shop-card/shop-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 200px;
+        border-radius: 8px;
+        &.favorite__card-long{
+            @extend %calc-height-A-2; // Смотреть файл _vars.scss
+            min-width: 200px;
+            max-width: 200px;
+            background-image: url('../images/shop-card/shop-bg-2.jpg');
+        }
+    }
+    &__card-product-info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__card-discount{
+        margin-top: 13px;
+        margin-left: 10px ;
+    }
+    &__card-percent{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        text-align: center;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        background-color: #EB3A65;
+        border-radius: 4px;
+        padding: 3px 5px;
+    }
+    &__card-like{
+        border: none;
+        background-color: transparent;
+        margin: 7px 4px;
+        padding: 5px 3px 3px 3px;
+        cursor: pointer;
+        &:hover{
+            .favorite__card-svg path{
+                fill: #EB3A65;
+            }
+        }
+    }
+    &__card-weight{
+        margin-left: 10px;
+        background: rgba(#FFFFFF ,0.74);
+        border-radius: 4px;
+        padding: 3px 5px;
+        max-width: 43px;
+        margin-top: -10px;
+        @extend %calc-margin_smal-2; // Смотреть файл _vars.scss
+    }
+    &__card-product{
+        &.favorite__card-long{
+            .favorite__card-weight{
+                @extend %calc-margin_big-2; // Смотреть файл _vars.scss
+            }
+        }
+    }
+    &__weight{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        font-size: 14px;
+        line-height: 16px;
+        color: #696C87;
+    }
+    // &__card-title{
+    //     @extend %font_u_400; // Смотреть файл _vars.scss
+    //     font-size: 16px;
+    //     line-height: 21px;
+    //     color: #3D405B;
+    //     margin-top: 8px;
+    //     margin-bottom: 7px;
+    // }
+    // &__card-buy{
+    //     @extend %d-f-sb; // Смотреть файл _vars.scss
+    //     align-items: center;
+    // }
+    // &__card-real-price{
+    //     @extend %font_u_400; // Смотреть файл _vars.scss
+    //     font-size: 10px;
+    //     line-height: 14px;
+    //     text-decoration-line: line-through;
+    //     color: #696C87;
+    //     display: block;
+    // }
+    // &__card-price{
+    //     @extend %font_u_700; // Смотреть файл _vars.scss
+    //     font-size: 16px;
+    //     line-height: 14px;
+    //     color: #3D405B;
+    // }
+    // &__card-btn{
+    //     @extend %font_u_500; // Смотреть файл _vars.scss
+    //     border: none;
+    //     background-color: transparent;
+    //     background-color: #494C69;
+    //     border-radius: 4px;
+    //     font-size: 16px;
+    //     line-height: 14px;
+    //     text-align: center;
+    //     color: #FFFFFF;
+    //     padding: 8px 22px 10px 22px;
+    //     cursor: pointer;
+    //     transition: .3s;
+    //     &:hover{
+    //         background: #6B6F8E;
+    //     }
+    // }
+    &__cards{
+        display: flex;
+        align-items: center;
+    }
+    &__card{
+        margin-right: 10px;
+        margin-bottom: 35px;
+    }
+    &__card-content{
+        max-width: 167px;
+    }
+    &__card-img{
+        margin-right: 8px;
+        max-width: 80px;
+        height: auto;
+    }
+    &__card-title{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        font-size: 13px;
+        line-height: 110%;
+        color: #3D405B;
+        letter-spacing: -0.24px;
+        margin-bottom: 7px;
+    }
+    &__card-weight{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 11px;
+        line-height: 110%;
+        color: #3D405B;
+        margin-bottom: 11px;
+    }
+    &__card-price,
+    &__card-number{
+        @extend %font_u_700; // Смотреть файл _vars.scss
+        font-size: 14px;
+        line-height: 140%;
+        color: #494C69;
+    }
+    &__card-info{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__card-product{
+        @extend %calc-height-B-2; // Смотреть файл _vars.scss
+        background-image: url('../images/shop-card/shop-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 200px;
+        border-radius: 8px;
+        &.favorite__card-long{
+            @extend %calc-height-A-2; // Смотреть файл _vars.scss
+            min-width: 200px;
+            background-image: url('../images/shop-card/shop-bg-2.jpg');
+        }
+        &.vine{
+            background-image: url('../images/vine-card.jpg');
+        }
+    }
+    &__card-product-info{
+        @extend %d-f-sb; // Смотреть файл _vars.scss
+    }
+    &__card-discount{
+        margin-top: 13px;
+        margin-left: 10px ;
+    }
+    &__card-percent{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        text-align: center;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        background-color: #EB3A65;
+        border-radius: 4px;
+        padding: 3px 5px;
+    }
+    &__card-like{
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;// Смотреть файл _vars.scss
+        margin: 7px 4px;
+        padding: 5px 3px 3px 3px;
+        cursor: pointer;
+        &:hover{
+            .favorite__card-svg path{
+                fill: #EB3A65;
+            }
+        }
+    }
+    &__card-weight{
+        margin-left: 10px;
+        background: rgba(#FFFFFF ,0.74);
+        border-radius: 4px;
+        padding: 3px 5px;
+        max-width: 43px;
+        @extend %calc-margin_smal-2; // Смотреть файл _vars.scss
+    }
+    &__card-product{
+        &.favorite__card-long{
+            .favorite__card-weight{
+                @extend %calc-margin_big-2; // Смотреть файл _vars.scss
+            }
+        }
+    }
+    &__weight{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        font-size: 14px;
+        line-height: 16px;
+        color: #696C87;
+    }
+    &__card-title{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 16px;
+        line-height: 21px;
+        color: #3D405B;
+        margin-top: 8px;
+        margin-bottom: 7px;
+    }
+    &__card-buy{
+        @extend %d-f-sb; // Смотреть файл _vars.scss
+        align-items: center;
+    }
+    &__card-real-price{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 10px;
+        line-height: 14px;
+        text-decoration-line: line-through;
+        color: #696C87;
+        display: block;
+    }
+    &__card-price{
+        @extend %font_u_700; // Смотреть файл _vars.scss
+        font-size: 16px;
+        line-height: 14px;
+        color: #3D405B;
+    }
+    &__card-btn{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;// Смотреть файл _vars.scss
+        background-color: #494C69;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 8px 22px 10px 22px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover{
+            background: #6B6F8E;
+        }
+    }&__cards{
+        display: flex;
+        align-items: center;
+    }
+    &__card{
+        margin-right: 10px;
+        margin-bottom: 35px;
+    }
+    &__card-content{
+        max-width: 167px;
+    }
+    &__card-img{
+        margin-right: 8px;
+        max-width: 80px;
+        height: auto;
+    }
+    &__card-title{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        font-size: 13px;
+        line-height: 110%;
+        color: #3D405B;
+        letter-spacing: -0.24px;
+        margin-bottom: 7px;
+    }
+    &__card-weight{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 11px;
+        line-height: 110%;
+        color: #3D405B;
+        margin-bottom: 11px;
+    }
+    &__card-price,
+    &__card-number{
+        @extend %font_u_700; // Смотреть файл _vars.scss
+        font-size: 14px;
+        line-height: 140%;
+        color: #494C69;
+    }
+    &__card-info{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__card-product{
+        @extend %calc-height-B-2; // Смотреть файл _vars.scss
+        background-image: url('../images/shop-card/shop-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 200px;
+        border-radius: 8px;
+        &.favorite__card-long{
+            @extend %calc-height-A-2; // Смотреть файл _vars.scss
+            min-width: 200px;
+            background-image: url('../images/shop-card/shop-bg-2.jpg');
+        }
+        &.vine{
+            background-image: url('../images/vine-card.jpg');
+        }
+    }
+    &__card-product-info{
+        @extend %d-f-sb; // Смотреть файл _vars.scss
+        align-items: start;
+    }
+    &__card-discount{
+        margin-top: 13px;
+        margin-left: 10px ;
+    }
+    &__card-percent{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        text-align: center;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        background-color: #EB3A65;
+        border-radius: 4px;
+        padding: 3px 5px;
+    }
+    &__card-like{
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        margin: 5px 4px;
+        padding: 5px 3px 3px 3px;
+        cursor: pointer;
+        &:hover{
+            .favorite__card-svg path{
+                fill: #EB3A65;
+            }
+        }
+    }
+    &__card-weight{
+        margin-left: 10px;
+        background: rgba(#FFFFFF ,0.74);
+        border-radius: 4px;
+        padding: 3px 5px;
+        max-width: 43px;
+        @extend %calc-margin_smal-2; // Смотреть файл _vars.scss
+    }
+    &__card-product{
+        &.favorite__card-long{
+            .favorite__card-weight{
+                @extend %calc-margin_big-2; // Смотреть файл _vars.scss
+            }
+        }
+    }
+    &__weight{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        font-size: 14px;
+        line-height: 16px;
+        color: #696C87;
+    }
+    &__card-title{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 16px;
+        line-height: 21px;
+        color: #3D405B;
+        margin-top: 8px;
+        margin-bottom: 7px;
+    }
+    &__card-buy{
+        @extend %d-f-sb; // Смотреть файл _vars.scss
+        align-items: center;
+    }
+    &__card-real-price{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 10px;
+        line-height: 14px;
+        text-decoration-line: line-through;
+        color: #696C87;
+        display: block;
+    }
+    &__card-price{
+        @extend %font_u_700; // Смотреть файл _vars.scss
+        font-size: 16px;
+        line-height: 14px;
+        color: #3D405B;
+    }
+    &__card-btn{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;// Смотреть файл _vars.scss
+        background-color: #494C69;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 8px 22px 10px 22px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover{
+            background: #6B6F8E;
+        }
+    }
+}
+
+
+.favorite-page__box-title{
+    display: none;
+}
+.orders-page__box-title{
+    display: none;
+}
+.about-qr-page__box-title{
+    display: none;
+}
+// Favorites end

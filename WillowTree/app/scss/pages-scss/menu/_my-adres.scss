@@ -1,0 +1,185 @@
+@import '../../vars';
+@import '../../fonts';
+@import '../../reset';
+@import '../../libs';
+@import '../../global';
+@import "../../media";
+
+.my-adres{
+    margin-left: 30px;
+    &__pole-1,
+    &__pole-2,
+    &__pole-3,
+    &__pole-4,
+    &__pole-5{
+        width: 800px;
+        margin-bottom: 22px;
+    }
+    &__pole-1-title,
+    &__pole-2-title,
+    &__pole-3-title,
+    &__pole-4-title,
+    &__pole-5-title{
+        @extend %font_u_500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #696C87;
+        margin-bottom: 7px;
+        &::before{
+            position: absolute;
+        }
+    }
+    &__pole-1-title{
+        &::before{
+            content: url(../../images/map-pin.svg);
+            top: 21px;
+        }
+    }
+    &__pole-2-title{
+        &::before{
+            content: url(../../images/map-2.svg);
+            top: 89px;
+            padding-left: 2px;
+        }
+    }
+    &__pole-3-title{
+        &::before{
+            content: url(../../images/building-community.svg);
+            top: 155px;
+            padding-left: 2px;
+        }
+    }
+    &__pole-4-title{
+        &::before{
+            content: url(../../images/door.svg);
+            top: 223px;
+            padding-left: 2px;
+        }
+    }
+    &__pole-5-title{
+        &::before{
+            content: url(../../images/stairs-up.svg);
+            top: 290px;
+            padding-left: 2px;
+        }
+    }
+    &__pole-1-title{
+        @extend %font_u_500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #696C87;
+        margin-bottom: 7px;
+    }
+    &__cities{
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+        @extend %font_u_500;
+        font-size: 15px;
+        line-height: 17px;
+        color: #696C87;
+        padding-bottom: 6px;
+        padding-left: 21px;
+        border-bottom: 1px solid rgba(#3D405B, 0.1);
+        cursor:pointer;
+    }
+    &__input{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        padding-bottom: 6px;
+        border-bottom: 1px solid rgba(#3D405B, 0.1);
+        padding-left: 28px;
+        outline: none;
+        @extend %font_u_500;
+        font-size: 15px;
+        line-height: 17px;
+        color: #696C87;
+    }
+    &__btns{
+        display: flex;
+        align-items: center;
+        margin-top: 38px;
+    }
+    &__btn{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        border: none;
+        padding: 12px 35px;
+        font-size: 16px;
+        line-height: 14px;
+        @extend %font_u_500;
+        color: #FFF9FF;
+        background-color: #494C69;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    &__btn-1{
+        background-color: #F1F1F1;
+        margin-right: 13px;
+        color: rgba(#3D405B,0.6);
+    }
+    &__btn-2{
+        margin-right: 13px;
+    }
+    &__box{
+        padding-bottom: 20px;
+        width: 830px;
+        &-title{
+            
+            @extend %font_u_400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #3D405B;
+            border-bottom: 1px solid #F1F1F1;
+            padding-bottom: 18px;
+            margin-bottom: 20px;
+        }
+        &-wrap{
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        &-subtitle{
+            @extend %font_u_400;
+            font-size: 12px;
+            line-height: 16px;
+            color: #3D405B;
+        }
+        &-name{
+            @extend %font_u_500;
+            font-size: 14px;
+            line-height: 19px;
+            color: #3D405B;
+            border-bottom: 1px solid #F1F1F1;
+            padding-bottom: 20px;
+            position: relative;
+            &::after{
+                content: url(../../images/arrow-right.svg);
+                position: absolute;
+                // cursor: pointer;
+                // right: 330px;
+                // top: 0;
+                right: 9px;
+                top: -5px;
+            }
+        }
+        &-btn{
+            @extend %font_u_500;
+            font-size: 16px;
+            line-height: 18px;
+            color: #FFFFFF;
+            background-color: #494C69;
+            border-radius: 4px;
+            padding: 12px 60px;
+        }
+    }
+}
+
+
+.my-adres-page__box-title{
+    display: none;
+}

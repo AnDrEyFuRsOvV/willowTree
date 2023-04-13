@@ -1,0 +1,860 @@
+// імпорт модулів 
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+// імпорт модулів pages
+@import './pages-scss/shop';
+@import './pages-scss/basket';
+@import './pages-scss/buy';
+@import './pages-scss/card-detale';
+
+// імпорт модулів menu
+@import './pages-scss/menu/about-qr';
+@import './pages-scss/menu/favorite';
+@import './pages-scss/menu/language';
+@import './pages-scss/menu/login';
+@import './pages-scss/menu/loyalty';
+@import './pages-scss/menu/my-adres';
+@import './pages-scss/menu/notification';
+@import './pages-scss/menu/orders';
+@import './pages-scss/menu/time-work';
+
+
+
+
+// Меню топбар
+.header{
+    z-index: 999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    &__inner{
+        @extend %d-f-c; // Смотреть файл _vars.scss 
+    }
+    &__logo{
+        margin-right: 50px;
+    }
+    &__location-btn{
+        @extend %font_i_400; // Смотреть файл _vars.scss 
+        margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent; // Смотреть файл _vars.scss 
+        font-size: 14px;
+        line-height: 17px;
+        color: #3C3F59;
+        margin-right: 35px;
+        position: relative;
+        cursor: pointer;
+        &::before{
+            content: url('../images/location.svg');
+            position: absolute;
+            top: -5px;
+            left: -27px;
+        }
+    }
+    &__search{
+        position: relative;
+    }
+    &__search-input{
+        margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent; // Смотреть файл _vars.scss 
+        border: 1px solid #3C3F59;
+        border-radius: 90px;
+        width: 322px;
+        margin-right: 63px;
+        padding: 10px 15px 10px;
+        
+    }
+    &__search-btn{
+        margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent; // Смотреть файл _vars.scss 
+        position: absolute;
+        top: 0;
+        right: 65px;
+        cursor: pointer;
+    }
+    &__menu-link{
+        @extend %font_i_800; // Смотреть файл _vars.scss 
+        font-size: 18px;
+        line-height: 20px;
+        color: #3D405B;
+        position: relative;
+        margin-right: 20px;
+        &::before{
+            content: url('../images/phone.svg');
+            position: absolute;
+            top: -2px;
+            left: -28px;
+        }
+    }
+    &__menu{
+        @extend %d-f-c; // Смотреть файл _vars.scss 
+        text-align: center;
+    }
+    &__menu-like{
+        margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent; // Смотреть файл _vars.scss 
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    &__menu-basket{
+        margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent; // Смотреть файл _vars.scss 
+        margin-right: 34px;
+        cursor: pointer;
+    }
+    &__menu-btn{
+        margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent; // Смотреть файл _vars.scss 
+        cursor: pointer;
+    }
+}
+// Меню топбар 
+
+// Слайдер банер
+.top-slider{
+    margin-bottom: 50px;
+    &__inner{
+        width: 100%;
+        height: 100%;
+        // position: relative;
+        // overflow: hidden;
+        // padding: 0 0 50% 0;
+    }
+    &__banner{
+        
+    }
+    &__banner img{
+        margin-right: 10px;
+        object-fit: contain;
+        width: 100%;
+        min-width: 320px;
+        max-width: 1200px;
+        height: auto;
+        max-height: 422px;
+        min-height: 170px;
+        
+        // position: absolute;
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // width: 100%;
+    }
+}
+// Слайдер банер конец
+
+// Список акцій
+.stock{
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 57px;
+        
+    }
+    &__item{
+        text-align: center;
+        align-items: center;
+        max-width: 130px;
+        margin-right: 18px;
+        cursor: pointer;
+        &:nth-child(8){
+            margin-right: 0;
+        }
+    }
+    &__box-img{
+        width: 130px;
+        height: 130px;
+        background-color: #F2F2F2;
+        border-radius: 8px;
+    }
+    &__box-img img{
+        align-items: center;
+        margin-top: 30px;
+    }
+    &__item-text{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 12px;
+        color: #3D405B;
+        margin-bottom: 37px;
+        &:nth-child(9){
+            margin-bottom: 0;
+        }
+        &:nth-child(10){
+            margin-bottom: 0;
+        }
+    }
+}
+// Список акцій кінець
+
+// Популярні товари 
+.shop{
+    &__title{
+        @extend %font_u_700; // Смотреть файл _vars.scss
+        font-size: 32px;
+        line-height: 48px;
+        color: #3D405B;
+        margin-bottom: 25px;
+    }
+    &__cards{
+        display: flex;
+        align-items: center;
+        
+    }
+    &__card{
+        margin-right: 22px;
+        margin-bottom: 50px;
+        &:nth-child(5){
+            margin-right: 0;
+        }
+    }
+    &__card-product{
+        // @extend %calc-height-B; // Смотреть файл _vars.scss
+        background-image: url('../images/shop-card/shop-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-width: 216px;
+        border-radius: 8px;
+        &.shop__card-long{
+            @extend %calc-height-A; // Смотреть файл _vars.scss
+            min-width: 216px;
+            background-image: url('../images/shop-card/shop-bg-2.jpg');
+        }
+    }
+    &__card-product-info{
+        @extend %d-f-sb; // Смотреть файл _vars.scss
+    }
+    &__card-discount{
+        margin-top: 13px;
+        margin-left: 10px ;
+    }
+    &__card-percent{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        text-align: center;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        background-color: #EB3A65;
+        border-radius: 4px;
+        padding: 3px 5px;
+    }
+    &__card-like{
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        margin: 7px 4px;
+        padding: 5px 3px 3px 3px;
+        cursor: pointer;
+        &:hover{
+            .shop__card-svg path{
+                fill: #EB3A65;
+            }
+        }
+    }
+    &__card-weight-margin{
+        padding-bottom: 10px;
+    }
+    &__card-weight{
+        margin-left: 10px;
+        background: rgba(#FFFFFF ,0.74);
+        border-radius: 4px;
+        padding: 3px 5px;
+        max-width: 43px;
+        @extend %calc-margin_smal; // Смотреть файл _vars.scss
+    }
+    &__card-product{
+        &.shop__card-long{
+            .shop__card-weight{
+                @extend %calc-margin_big; // Смотреть файл _vars.scss
+            }
+        }
+    }
+    &__weight{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        font-size: 14px;
+        line-height: 16px;
+        color: #696C87;
+    }
+    &__card-title{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 16px;
+        line-height: 21px;
+        color: #3D405B;
+        margin-top: 8px;
+        margin-bottom: 7px;
+    }
+    &__card-buy{
+        @extend %d-f-sb; // Смотреть файл _vars.scss
+        align-items: center;
+    }
+    &__card-real-price{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 10px;
+        line-height: 14px;
+        text-decoration-line: line-through;
+        color: #696C87;
+        display: block;
+    }
+    &__card-price{
+        @extend %font_u_700; // Смотреть файл _vars.scss
+        font-size: 16px;
+        line-height: 14px;
+        color: #3D405B;
+    }
+    &__card-btn{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent; // Смотреть файл _vars.scss
+        background-color: #494C69;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 8px 22px 10px 22px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover{
+            background: #6B6F8E;
+        }
+    }
+}
+// Популярні товари кінець
+
+// Футер бар
+.footer{
+    // position: absolute;
+    // bottom: -100px;
+    // left: 0;
+    // right: 0;
+    z-index: 22;
+    margin-top: 100px;
+    &__inner{
+        margin-bottom: 75px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content-wrapper{
+        display: flex;
+        align-items: center;
+        background-color: #F2F2F2;
+        width: 100%;
+        justify-content: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    &__social-img-1{
+        padding: 3px 7px 3px 6px;
+    }
+    &__social{
+        display: flex;
+        margin-top: 25px;
+    }
+    &__social-link{
+        background: #F2F2F2;
+        box-shadow: 0px 1px 0px rgba(40, 40, 39, 0.22);
+        border-radius: 9px;
+        padding: 7px;
+        width: 38px;
+        height: 38px;
+        margin-right: 15px;
+        transition: .3s;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+    &__payments{
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    &__payments-link{
+        margin-right: 25px;
+        transition: .3s;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+    &__help{    
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    &__help-link{
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 25px;
+        color: #3C3F59;
+        margin-right: 43px;
+        position: relative;
+        transition: .3s;
+        &:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+        &::after{
+            content: "|";
+            position: absolute;
+            top: 0;
+            right: -22px;
+        }
+        &:last-child{
+            &::after{
+                display: none;
+            }
+        }
+    }
+    &__text{
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+        color: #3C3F59;
+        padding-left: 10px;
+    }
+}
+// Футер бар кінець
+
+// Повідомлення с затемненням
+.massage{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 246%;
+    background-color: #fff;
+    background: rgba(#000000, .5);
+}
+// Повідомлення с затемненням кінець
+
+
+
+.content__wrapper{
+    display: flex;
+    margin-top: 30px;
+}
+
+.photos{
+    &__card{
+        margin-right: 40px;
+    }
+    &__img-box{
+        max-width: 640px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+    }
+    &__small-img{
+        max-width: 120px;
+        height: auto;
+        margin-right: 10px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+.description__card{
+    max-width: 517px;
+}
+
+.description{
+    &__breadcrumbs{
+        @extend %font_u_500;// Смотреть файл _vars.scss
+        font-size: 12px;
+        line-height: 18px;
+        color: #3D405B;
+        margin-bottom: 39px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &::before{
+            content: url(../images/catalog-book.svg);
+            padding: 5px 6px;
+            background-color: #3D405B;
+            border-radius: 100%;
+            padding-bottom: 1px;
+            margin-right: 24px;
+            cursor: pointer; 
+        }
+        
+    }
+    &__categories{
+        color: #3D405B;
+        margin-right: 24px;
+        position: relative;
+        &::before{
+            content: "/";
+            color: rgba(#3D405B, 0.5);
+            position: absolute;
+            left: -13px;
+            cursor:text;
+        }
+        &.active{
+            color: rgba(#3D405B, 0.5);
+            &::before{
+                color: rgba(#3D405B, 0.5);
+            }
+        }
+        
+    }
+    &__title-box{
+        display: flex
+        ;align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    &__title{
+        font-family: 'Ubuntu';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 16px;
+        color: #3D405B;
+    }
+    &__btn{
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        margin-top: 3px;
+        cursor: pointer;
+    }
+    &__subtitle{
+        font-family: 'Ubuntu';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #3D405B;
+    }
+    &__action{
+        margin-top: 38px;
+        margin-bottom: 10px;
+        color: #EB3A65;
+        font-family: 'Ubuntu';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: right;
+    }
+    &__about{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #3D405B;
+        margin-bottom: 35px;
+    }
+    &__qr{
+        font-family: 'Ubuntu';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #3D405B;
+    }
+    &__weight{
+        font-family: 'Ubuntu';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+        color: #3D405B;
+    }
+    &__real-price{
+        font-family: 'Ubuntu';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #696C87;
+        text-decoration-line: line-through;
+    }
+    &__price{
+        font-family: 'Ubuntu';
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 34px;
+        color: #3D405B;
+    }
+    &__about-box2{
+        text-align: right;
+    }
+    &__adress{
+        min-width: 255px;
+        max-width: 255px;
+        border: none;
+        background-color: rgba(0,0,0,0);
+        outline: none;
+        border: 1px solid #B4B5C1;
+        border-radius: 4px;
+        cursor: pointer; 
+        font-size: 15px;
+        line-height: 17px; 
+        color: #3D405B; 
+        padding: 12px 8px 12px 15px;
+        appearance: none;
+        background: url(../images/card-detale/arrow.svg) no-repeat right;
+        background-position-x: calc(100% - 8px);
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #3C3F59;
+        margin-bottom: 46px;
+    }
+    &__table-size{
+        margin-bottom: 35px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__size{
+        display: flex;
+        align-items: center;
+    }
+    &__size-text{
+        font-family: 'Ubuntu';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #3D405B;
+        margin-left: 6px;
+    }
+    &__buy-btn{
+        font-family: 'Ubuntu';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        padding: 11px 53px;
+        color: #FFFFFF;
+        background-color: #494C69;
+        border-radius: 4px;
+    }
+    &__mod{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        &-card{
+            max-width: 123px;
+            margin-right: 8px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        &-title{
+            max-width: 100px;
+            margin-top: 5px;
+            font-family: 'Ubuntu';
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 120%;
+            color: #3D405B;
+            margin-bottom: 2px;
+        }
+        &-real-price{
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 14px;
+            color: #696C87;
+            text-decoration-line: line-through;
+        }
+        &-price{
+            font-family: 'Ubuntu';
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 14px;
+            color: #3D405B;
+        }
+    }
+    &__composition{
+        &-text{
+            margin-bottom: 15px;
+            font-family: 'Ubuntu';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #3D405B;
+        }
+        &-item{
+            font-family: 'Ubuntu';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #3D405B;
+        }
+    }
+}
+
+.modal-location{
+    z-index: 999;
+    visibility: hidden;
+    display: flex;
+    opacity: 0;
+    background-color: rgba(#000000,0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    &.visible{
+        visibility: visible;
+        opacity: 1;
+    }
+    &__container{
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        padding: 20px;
+        transform: translate3d(0, -100%, 0) perspective(1000px);
+        transition: transform 0.3s ease-in-out;
+        &.visible{
+            transform: translate3d(0, 0, 0) perspective(1000px);
+        }
+    }
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 26px;
+    }
+    &__title{
+        margin-top: 43px;
+        font-family: 'Ubuntu';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        color: #3D405B;
+        margin-right: 218px;
+    }
+    &__close{
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        margin-top: -43px;
+    }
+    &__body{
+        max-width: 380px;
+    }
+    &__city{
+        width: 100%;
+        border: 1px solid #B4B5C1;
+        border-radius: 4px;
+        background-color: transparent;
+        margin: 0;
+        padding: 11px 15px;
+        appearance: none;
+        background: url(../images/card-detale/arrow.svg) no-repeat right;
+        background-position-x: calc(100% - 8px);
+        font-family: 'Inter';
+        outline: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #3C3F59;
+        margin-bottom: 20px;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    &__img{
+        margin-right: 10px;
+    }
+    &__info-content{
+        background-image: url(../images/bg-modal.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-width: 232px;
+        border-radius: 8px;
+        padding: 16px 23px;
+        margin-bottom: 5px;
+        position: relative;
+        &::after{
+            content: url(../images/arrow-modal.svg);
+            position: absolute;
+            bottom: 12px;
+            right: 10px;
+        }
+    }
+    &__info-text,
+    &__info-time{
+        font-family: 'Ubuntu';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 118%;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    &__info-box{
+        display: flex;
+        align-items: start;
+        margin-bottom: 10px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__info-box img{
+        margin-right: 7px;
+    }
+    &__num{
+        font-family: 'Ubuntu';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 118%;
+        color: #3D405B;
+        text-decoration-line: underline;
+        position: relative;
+        padding-left: 22px;
+        &::before{
+            position: absolute;
+            content: url(../images/phone-modal.svg);
+            top: 0;
+            left: 0;
+
+        }
+    }
+}
+
+
+@import "media";
+
+
+

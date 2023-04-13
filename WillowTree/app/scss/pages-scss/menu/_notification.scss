@@ -1,0 +1,94 @@
+@import '../../vars';
+@import '../../fonts';
+@import '../../reset';
+@import '../../libs';
+@import '../../global';
+@import "../../media";
+.notification{
+    &__box{
+        @extend %d-f; // Смотреть файл _vars.scss
+        align-items: center;
+        flex-direction: column;
+        margin-top: 115px;
+        margin-left: 300px;
+    }
+    &__text{
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+    &__title{
+        @extend %font_u_700; // Смотреть файл _vars.scss
+        font-size: 18px;
+        line-height: 27px;
+        color: #3D405B;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    &__descr{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 16px;
+        line-height: 22px;
+        color: #3D405B;
+        margin-bottom: 20px;
+        &.log{
+            @extend %font_u_400; // Смотреть файл _vars.scss
+            font-size: 16px;
+            line-height: 22px;
+            color: #3D405B;
+            margin-bottom: 34px;
+            margin-right: 10px;
+        }
+    }
+    &__btn{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        padding: 10px 62px;
+        background-color: #494C69;
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+}
+
+.notification-true{
+    margin-left: 30px;
+    max-width: 820px;
+    &__sms{
+        max-width: 820px;
+        border-bottom: 1px solid #F1F1F1;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    &__img{
+        max-width: 820px;
+    }
+    &__content{
+        margin-top: 10px;
+    }
+    &__date{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.232836px;
+        color: #696C87;
+        margin-bottom: 7px;
+    }
+    &__title{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 20px;
+        line-height: 130%;
+        color: #3D405B;
+    }
+    &__text{
+        @extend %font_u_400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #696C87;
+    }
+}
+
+.notification-page__box-title{
+    display: none;
+}

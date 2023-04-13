@@ -1,0 +1,352 @@
+// Default styles for html
+html,
+body {
+	height: 100%;
+  background-color: #FFF;
+}
+// Default styles for html
+
+// Main wrap
+.main{
+  max-width: 1920px;
+  margin: 0 auto;
+}
+// Main wrap
+
+.wrapper-branch-2{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content{
+  flex-grow: 1;
+}
+.footer{
+  flex-shrink: 0;
+}
+
+// Container wrap
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+// Container wrap
+
+// Styles for slider dots
+.slick-dots{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 33px;
+  right: 47px;
+}
+.slick-dots button{
+  border: 1px solid #3D405B;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  font-size: 0;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: .3s;
+    &:child(3){
+      margin-right: 0;
+    }
+  &:hover{
+    background-color: #3D405B;
+  }
+  &:active{
+    background-color: #F5F5F5;
+  }
+}
+.slick-active button{
+  background-color: #3D405B;
+}
+// Styles for slider dots
+
+// Styles for location-msg
+.location__info {
+  position: fixed;
+  right: 0;
+  display: flex;
+  justify-content: end;
+  align-items: first baseline;
+  overflow: hidden;
+  z-index: 5;
+  transform: translateX(100%);
+  &.active{
+    transform: translateX(0);
+  }
+}
+.info {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  position: fixed;
+  margin: 0;
+  top: 20px;
+  right: 0;
+  margin-right: 11px;
+  transition: all .3s;
+  transform: translateX(0);
+  &.active{
+    transform: translateX(-566%);
+    z-index: 99;
+  }
+}
+.location__info-inner {
+  background: #FFFFFF;
+  border-right: 2px solid rgba(52, 56, 68, 0.1);
+  border-bottom: 3px solid rgba(52, 56, 68, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  transition: all .3s;
+  transform: translateX(100%);
+  z-index: 99;
+  &.active{
+    transform: translateX(0);
+  }
+}
+.location__info-box {
+  display: flex;
+  margin-bottom: 17px;
+  margin-left: 16px;
+  position: relative;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  & img{
+    position: absolute;
+    top: 0;
+    left: -21px;
+  }
+}
+.location__addres-title {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #6C6E84;
+}
+.location__addres {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3D405B;
+}
+.location__box-content{
+  margin-left: 16px;
+  
+}
+.location__day {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #6C6E84;
+  margin-bottom: 5px;
+}
+.location__time {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3D405B;
+}
+.img-slider-2{
+  display: none;
+}
+// Styles for location-msg
+
+// Styles for active class
+  // .content.active{
+  //   display: none;
+  // }
+// Styles for active class
+
+// Styles for svg tabler
+  // .icon-tabler{
+  //   stroke-width: 0.5;
+  //   color: #3D405B;
+  //   fill: #3D405B;
+  // }
+// Styles for svg tabler
+
+// Styles for branch on site
+.wrapper-branch{
+  position: relative;
+  &::after{
+      content: url('../images/branch-content.svg');
+      position: absolute;
+      bottom: 0;
+      right: 0;
+  }
+  &::before{
+      content: url('../images/branch-content-1.svg');
+      position: absolute;
+      top: -150px;
+      left: 0;
+  }
+}
+.wrapper-branch-2{
+  position: relative;
+  &::after{
+      content: url('../images/branch-content.svg');
+      position: absolute;
+      bottom: 40px;
+      right: 0;
+  }
+  &::before{
+      content: url('../images/branch-content-1.svg');
+      position: absolute;
+      top: 0px;
+      left: 0;
+  }
+}
+// Styles for branch on site
+
+// Sidebar
+.sidebar{
+  &__login{
+      @extend %d-f-c; // Смотреть файл _vars.scss
+      max-width: 310px;
+      flex-direction: column;
+  }
+  &__login-img{
+      background-color: #3D405B;
+      padding: 12.5px 13.5px;
+      border-radius: 100%;
+      &.on{
+          width: 50px;
+          height: 50px;
+      }
+  }
+  &__login-text{
+      @extend %font_u_400; // Смотреть файл _vars.scss
+      font-size: 16px;
+      line-height: 135%;
+      text-align: center;
+      color: #3D405B;
+      max-width: 270px;
+      margin-bottom: 15px;
+      margin-top: 15px;
+  }
+  &__login-btn{
+      @extend %font_u_500; // Смотреть файл _vars.scss
+      border: none;
+      font-size: 14px;
+      line-height: 14px;
+      color: #FFFFFF;
+      background-color: #494C69;
+      border-radius: 4px;
+      padding: 6px 20.5px 8px 20.5px;
+      cursor: pointer;
+  }
+  &__menu{
+      width: 310px;
+      margin-top: 24px;
+      margin-bottom: 73px;
+  }
+  &__item-li{
+      &.profile{
+          margin-bottom: 30px;
+      }
+      &.notification{
+          margin-bottom: 30px;
+      }
+      &.delivery{
+          margin-bottom: 40px;
+      }
+  }
+  &__item{
+      @extend %d-f; // Смотреть файл _vars.scss
+      align-items: center;
+      position: relative;
+      &.notification{
+          background-color: #0CA48F;
+          &::after{
+              content: url('../images/sidebar/arrow-white.svg');
+          }
+      }
+      &::after{
+          content: url('../images/sidebar/arrow.svg');
+          position: absolute;
+          top:18px;
+          right: 15px;
+      }
+      & img{
+          padding: 13px 15px 13px 20px;
+      }
+  }
+  &__text{
+      @extend %font_u_400; // Смотреть файл _vars.scss
+      font-size: 16px;
+      line-height: 22px;
+      color: #3D405B;
+      &.notification{
+          color: #fff;
+      }
+  }
+}
+// Sidebar кінець
+
+
+.noUi-target{
+  background-color: #3D405B;
+  border: none;
+  border-radius: 100px;
+  box-shadow: none;
+  height: 3px;
+  // max-width: 293px;
+  cursor: pointer;
+}
+.noUi-connect{
+  background-color: #3D405B;
+}
+
+.noUi-handle::after,
+.noUi-handle::before{
+  display: none;
+}
+
+.noUi-handle{
+  border: none; 
+  box-shadow: none;
+  background-color: #3D405B;
+  border-radius: 100%;
+}
+
+.noUi-horizontal .noUi-handle{
+  width: 17px;
+  height: 17px;
+  top: -7px;
+  cursor: pointer;
+}
+
+.noUi-horizontal .noUi-handle-upper{
+  right: 0;
+}
+ 
+.catalog__price-slider{
+
+}
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+.profile-page__box-title{
+  display: none;
+}

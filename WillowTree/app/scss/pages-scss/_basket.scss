@@ -1,0 +1,163 @@
+.basket{
+    &__breadcrumbs{
+        @extend %font_u_500;// Смотреть файл _vars.scss
+        font-size: 12px;
+        line-height: 18px;
+        color: #3D405B;
+        margin-bottom: 39px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &::before{
+            content: url(../images/catalog-book.svg);
+            padding: 5px 6px;
+            background-color: #3D405B;
+            border-radius: 100%;
+            padding-bottom: 1px;
+            margin-right: 24px;
+            cursor: pointer; 
+        }
+        
+    }
+    &__categories{
+        color: #3D405B;
+        margin-right: 24px;
+        position: relative;
+        &::before{
+            content: "/";
+            color: rgba(#3D405B, 0.5);
+            position: absolute;
+            left: -13px;
+            cursor:text;
+        }
+        &.active{
+            color: rgba(#3D405B, 0.5);
+            &::before{
+                color: rgba(#3D405B, 0.5);
+            }
+        }
+    }
+    &__row{
+        display: flex;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #F1F1F1;
+        & img{
+            margin-right: 10px;
+        }
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        & img{
+            margin-right: 8px;
+            max-width: 100px;
+            height: auto;
+        }
+    }
+    &__title{
+        font-family: 'Ubuntu';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        color: #3D405B;
+    }
+    &__descr-item{
+        margin-top: 7px;
+        font-family: 'Ubuntu';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #3D405B;
+    }
+    &__descr{
+        margin-right: 343px;
+    }
+    &__add-item{
+        display: flex;
+        align-items: center;
+        margin-right: 175px;
+    }
+    &__price{
+        font-family: 'Ubuntu';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 14px;
+        color: #3D405B;
+    }
+    &__btn-buy{
+        font-family: 'Ubuntu';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        color: #FFFFFF;
+        border: none;
+        background-color: #494C69;
+        border-radius: 4px;
+        padding: 6px 19px;
+        margin-right: 185px;
+        cursor: pointer;
+    }
+    &__rekomend-title{
+        font-family: 'Ubuntu';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+        color: #3D405B;
+        margin-bottom: 20px;
+    }
+    &__all-box{
+        display: flex;
+        justify-content: end;
+    }
+    &__all-price{
+        font-family: 'Ubuntu';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+        color: #3D405B;
+        margin-right: 15px;
+    }
+    &__btn-order{
+        font-family: 'Ubuntu';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+        padding: 11px 38px;
+        background-color: #494C69;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+
+.minus{
+    padding: 13px 8px;
+    background-color: #F1F1F1;
+    border-radius: 7px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+.number{
+    margin-top: -3px;
+    margin-right: 9px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3D405B;
+    text-align: center;
+    cursor: text;
+
+}
+.plus{
+    padding: 8px;
+    background-color: #494C69;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.box__add{
+    display: flex;
+    align-items: center;
+}

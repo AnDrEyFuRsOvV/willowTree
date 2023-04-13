@@ -1,0 +1,41 @@
+
+@import '../../vars';
+@import '../../fonts';
+@import '../../reset';
+@import '../../libs';
+@import '../../global';
+@import "../../media";
+
+.about-qr{
+    &__box{
+        @extend %d-f; // Смотреть файл _vars.scss
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 215px;
+        margin-left: 300px;
+    }
+    &__img{
+        margin-bottom: 43px;
+    }
+    &__title{
+        @extend %font_u_700;
+        font-size: 16px;
+        line-height: 130%;
+        color: #3D405B;
+        margin-bottom: 5px;
+    }
+    &__text{
+        @extend %font_u_400;
+        font-size: 14px;
+        line-height: 130%;
+        color: #696C87;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+.about-page__box-title{
+    display: none;
+}

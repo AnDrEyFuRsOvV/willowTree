@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Willow Tree</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.min.css">
+</head>
+
+<body>
+
+<!-- Shop сторінка  -->
+
+  <main class="main">
+    <div class="wrapper-branch-2">
+
+      <header class="header">
+        <!-- Повідомленя про локацію ліворуч  -->
+        
+        <div class="location">
+          <button class="info"><img id="info-img" class="info-img" src="../images/info-img.svg" alt="info"></button>
+          
+          <div class="location__info">
+            <div class="location__info-inner">
+              <div class="location__info-box">
+                <img src="../images/info/map-pin.svg" alt="map">
+                <div class="location__box-content">
+                  <p class="location__addres-title">Адреса</p>
+                  <p class="location__addres">вул. Комерційна, 1</p>
+                </div>
+              </div>
+              <div class="location__info-box">
+                <img src="../images/info/clock.svg" alt="clock">
+                <div class="location__box-content">
+                  <p class="location__day">
+                    Пн-Чт, Нд: 
+                    <span class="location__time">12:00-20:00</span>
+                  </p>
+                  <p class="location__day">
+                    Пн-Чт, Нд: 
+                    <span class="location__time">12:00-20:00</span>
+                  </p>
+                </div>
+              </div>      
+            </div>
+          </div>
+        </div>
+        <!-- Повідомленя про локацію ліворуч кінець -->
+        
+        <!-- Меню топбар -->
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__logo">
+              <a href="#" class="header__logo-link">
+                <picture>
+                  <source srcset="../images/logo-smal.svg"
+                  media="(max-width: 490px)">
+                  <img src="../images/logo.svg" alt="logo">
+                </picture>
+              </a>
+            </div>
+            <div class="header__location">
+              <button class="header__location-btn">
+                Змінити локацію
+              </button>
+            </div>
+            <div class="header__search">
+              <input class="header__search-input" name="search" type="text" placeholder="Пошук ...">
+              <button class="header__search-btn"><img src="../images/search.svg" alt=""></button>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__menu">
+                <li class="header__menu-item">
+                  <a href="tel:380975787801" class="header__menu-link">
+                    +38 (097)-578-78-01
+                  </a>
+                </li>
+                <li class="header__menu-list-like">
+                  <button class="header__menu-like">
+                    <img src="../images/like.svg" alt="header-like">
+                  </button>
+                </li>
+                <li class="header__menu-item">
+                  <button class="header__menu-basket">
+                    <img src="../images/basket.svg" alt="header-basket">
+                  </button>
+                </li>
+                <li class="header__menu-item">
+                  <a href="/pages/Sidebar/sidebar.html" class="header__menu-btn">
+                    <img src="../images/menu.svg" alt="header-btn">
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- Меню топбар кінець -->
+
+    <!-- Сторінка магазин -->
+    <div class="container">
+      <div class="section-shop__wrapper">
+        
+      <!-- Сайдбар каталог -->
+  
+  
+      <div class="catalog-menu__wrapper">
+        <div class="catalog-menu__buttons">
+          <div class="catalog-menu__btn">
+            <button class="catalog-menu__btn-content" id="catalog-menu__btn-content">
+              <img src="../images/catalog-btn.svg" alt="">
+            </button>
+          </div>
+          <div class="catalog-menu__links-slider">
+            <a href="#" class="catalog-menu__link">
+              Червоне вино
+            </a>
+            <a href="#" class="catalog-menu__link">
+              Біле вино
+            </a>
+            <a href="#" class="catalog-menu__link active">
+              Ігристе вино
+            </a>
+            <a href="#" class="catalog-menu__link">
+              Ігристе вино
+            </a>
+            <a href="#" class="catalog-menu__link">
+              Ігристе вино
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      
+  
+        <section class="catalog">
+          <div class="catalog__wrapper">
+            <div class="catalog__title">Каталог</div>
+          <div class="catalog__box">
+            <a href="/vines.html" class="catalog__categories active">Вино</a>
+            <a href="" class="catalog__categories">Ктегорія</a>
+            <a href="" class="catalog__categories">Ктегорія</a>
+            <a href="" class="catalog__categories">Ктегорія</a>
+            <a href="" class="catalog__categories">Ктегорія</a>
+            <a href="" class="catalog__categories">Ктегорія</a>
+            <a href="" class="catalog__categories">Ктегорія</a>
+            <a href="" class="catalog__categories">Ктегорія</a>
+            <a href="" class="catalog__categories">Ктегорія</a>
+            <a href="" class="catalog__categories">Ктегорія</a>
+          </div>
+            <div class="wrap">
+              <div class="wrap-box">
+                <div class="title">
+                  <p class="wrap-box__title">Фільтри</p>
+                  <img class="wrap-box__img" src="../images/close-sidebar.svg" alt="">
+                </div>
+            <div class="catalog__price">
+              <div class="catalog__price-title accordion disable active enable">Ціна</div>
+              <div class="catalog__price-box accordion-content active">
+                <label class="catalog__price-label">
+                  <input type="number" min="40" max="9999" value="40" id="input-one" class="catalog__price-input">
+                  <span class="catalog__price-span">грн</span>
+                </label>
+                <label class="catalog__price-label">
+                  <input type="number" min="40" max="9999" value="9999" id="input-two" class="catalog__price-input">
+                  <span class="catalog__price-span">грн</span>
+                </label>
+              </div>
+              <div class="catalog__price-slider accordion-content active" id="rangeSlider"></div>
+            </div>
+            <div class="catalog__brand">
+              <div class="catalog__brand-title accordion disable active enable">Бренд</div>
+              <div class="catalog__brand-box accordion-content active">
+                <label class="catalog__brand-label">
+                  <input type="checkbox" class="catalog__brand-input">
+                  <span class="catalog__brand-box__span"></span>
+                  Назва бренду 
+                </label>
+                <label class="catalog__brand-label">
+                  <input type="checkbox" class="catalog__brand-input">
+                  <span class="catalog__brand-box__span"></span>
+                  Назва бренду 
+                </label>
+                <label class="catalog__brand-label">
+                  <input type="checkbox" class="catalog__brand-input">
+                  <span class="catalog__brand-box__span"></span>
+                  Назва бренду
+                </label>
+                <label class="catalog__brand-label">
+                  <input type="checkbox" class="catalog__brand-input">
+                  <span class="catalog__brand-box__span"></span>
+                  Назва бренду
+                </label>
+                <label class="catalog__brand-label">
+                  <input type="checkbox" class="catalog__brand-input">
+                  <span class="catalog__brand-box__span"></span>
+                  Назва бренду
+                </label>
+              </div>
+            </div>
+            <div class="catalog__sort">
+              <div class="catalog__sort-title accordion disable active enable">Сортування</div>
+              <div class="catalog__sort-box accordion-content active">
+                <label class="catalog__sort-label">
+                  <input type="checkbox" class="catalog__sort-input">
+                  <span class="catalog__sort-box__span"></span>
+                  Від найдешевших
+                </label>
+                <label class="catalog__sort-label">
+                  <input type="checkbox" class="catalog__sort-input">
+                  <span class="catalog__sort-box__span"></span>
+                  Від найдорожчих
+                </label>
+              </div>
+            </div>
+            <button class="catalog__btn">Показати</button>
+          </div>
+        </div>
+          </div>
+        </section>
+        <!-- Сайдбар каталог end -->
+  
+        <!-- каталог shop -->
+        <section class="catalog-shop">
+          <div class="catalog-shop__breadcrumbs">
+            <a href="" class="catalog-shop__categories active">Вино</a>
+          </div>
+          <div class="catalog-shop__title">Вино</div>
+  
+          <div class="catalog-shop__vines">
+              <a href="/pages/vines-shop.html" class="catalog-shop__vine">
+                  <img src="../images/vine-1.jpg" alt="">
+                  <div class="catalog-shop__vine-title">Червоне вино</div>
+              </a>
+              <a href="/pages/vines-shop.html" class="catalog-shop__vine">
+                  <img src="../images/vine-2.jpg" alt="">
+                  <div class="catalog-shop__vine-title">Біле вино</div>
+              </a>
+              <a href="/pages/vines-shop.html" class="catalog-shop__vine">
+                  <img src="../images/vine-3.jpg" alt="">
+                  <div class="catalog-shop__vine-title">Ігристе вино</div>
+              </a>
+              <a href="/pages/vines-shop.html" class="catalog-shop__vine">
+                  <img src="../images/vine-3.jpg" alt="">
+                  <div class="catalog-shop__vine-title">Ігристе вино</div>
+              </a>
+          </div>
+  
+        </section> 
+        <!-- каталог shop end -->
+      </div>
+    </div>
+      <!-- Сторінка магазин end -->
+    </div>
+
+
+
+  <!-- Блок сообщения поверх екрана -->
+  <div class="modal-location">
+    <div class="modal-location__container">
+      <div class="modal-location__header">
+        <div class="modal-location__title">Оберіть локацію</div>
+        <button class="modal-location__close">
+          <img src="../images/card-detale/madal-close.svg" alt="close" class="madal__img">
+        </button>
+      </div>
+      <div class="modal-location__body">
+        <select class="modal-location__city">
+          <option value="Kr">Кривий Ріг</option>
+          <option value="Kv">Київ</option>
+          <option value="Xr">Харьків</option>
+          <option value="Lv">Львів</option>
+          <option value="Ods">Одесса</option>
+        </select>
+        <div class="modal-location__box">
+          <img src="../images/modal-logo.svg" alt="" class="modal-location__img">
+          <div class="modal-location__info">
+            <div class="modal-location__info-content">
+              <div class="modal-location__info-box">
+                <img src="../images/map-modal.svg" alt="">
+                <div class="box">
+                  <p class="modal-location__info-text">
+                    вул. Комерційна, Кривий Ріг,
+                  </p>
+                  <p class="modal-location__info-text"> 
+                    вул. Комерційна, Кривий Ріг,
+                  </p>
+                </div>
+              </div>
+              <div class="modal-location__info-box">
+                <img src="../images/clock-modal.svg" alt="">
+                <p class="modal-location__info-time">Пн-Вс: 08:00-19:00</p>
+              </div>
+              <div class="modal-location__info-box">
+                <img src="../images/clock-modal.svg" alt="">
+                <p class="modal-location__info-time">Пн-Вс: 08:00-19:00</p>
+              </div>
+            </div>
+            <a href="tel:380977252525" class="modal-location__num">+380977252525</a>
+          </div>
+          
+        </div>
+        <div class="modal-location__box">
+          <img src="../images/modal-logo.svg" alt="" class="modal-location__img">
+          <div class="modal-location__info">
+            <div class="modal-location__info-content">
+              <div class="modal-location__info-box">
+                <img src="../images/map-modal.svg" alt="">
+                <div class="box">
+                  <p class="modal-location__info-text">
+                    вул. Комерційна, Кривий Ріг,
+                  </p>
+                  <p class="modal-location__info-text"> 
+                    вул. Комерційна, Кривий Ріг,
+                  </p>
+                </div>
+              </div>
+              <div class="modal-location__info-box">
+                <img src="../images/clock-modal.svg" alt="">
+                <p class="modal-location__info-time">Пн-Вс: 08:00-19:00</p>
+              </div>
+              <div class="modal-location__info-box">
+                <img src="../images/clock-modal.svg" alt="">
+                <p class="modal-location__info-time">Пн-Вс: 08:00-19:00</p>
+              </div>
+            </div>
+            <a href="tel:380977252525" class="modal-location__num">+380977252525</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Блок сообщения поверх екрана -->
+
+    <!-- Футер бар -->
+    <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__content">
+          <div class="footer__content-box">
+            <div class="footer__links">
+              <a href="#" class="footer__logo">
+                <img src="../images/footer/logo.svg" alt="logo">
+              </a>
+              <div class="footer__social">
+                <a href="#" class="footer__social-link">
+                  <img class="footer__social-img footer__social-img-1" src="../images/footer/facebook.svg" alt="social">
+                </a>
+                <a href="#" class="footer__social-link">
+                  <img class="footer__social-img footer__social-img-2" src="../images/footer/instagram.svg" alt="social">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__content-box">
+            <div class="footer__payments">
+              <a href="#" class="footer__payments-link">
+                <img src="../images/footer/mono.svg" alt="payments">
+              </a>
+              <a href="#" class="footer__payments-link">
+                <img src="../images/footer/way.svg" alt="payments">
+              </a>
+              <a href="#" class="footer__payments-link">
+                <img src="../images/footer/visa.svg" alt="payments">
+              </a>
+              <a href="#" class="footer__payments-link">
+                <img src="../images/footer/mastercard.svg" alt="payments">
+              </a>
+            </div>
+            <div class="footer__help">
+              <a class="footer__help-link" href="#">
+                Політика конфіденційності
+              </a>
+              <a class="footer__help-link" href="#">
+                Умови користування
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__content">
+      <a href="#" class="footer__content-wrapper">
+        <img src="../images/footer/qb.svg" alt="qb-tools">
+        <div class="footer__text" >Powered by QB tools</div>
+      </a>
+    </div>
+  </footer>
+  <!-- Футер бар -->
+</div>
+  </main>
+
+<!-- Кінець сторінки  -->
+  
+  <script src="../js/main.min.js"></script>
+  <script src="../js/Components/location-msg-pages.js""></script>
+  <script src="../js/Components/modal-location.js""></script>
+  <script src="../js/Components/ui-slider.js""></script>
+  <script src="../js/Components/accordion-shop.js""></script>
+  <script src="../js/Components/sidebar-btn.js""></script>
+</body>
+
+</html>

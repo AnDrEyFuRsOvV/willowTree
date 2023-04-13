@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" login-page="width=device-width, initial-scale=1.0">
+    <title>Willow Tree</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.min.css">
+  </head>
+  
+  <body>
+    
+    <!-- Login сторінка  -->
+    <main class="main">
+      
+      <header class="header">
+        <!-- Повідомленя про локацію ліворуч  -->
+        
+        <div class="location">
+          <button class="info"><img id="info-img" class="info-img" src="../../images/info-img.svg" alt="info"></button>
+          
+          <div class="location__info">
+            <div class="location__info-inner">
+              <div class="location__info-box">
+                <img src="../../images/info/map-pin.svg" alt="map">
+                <div class="location__box-content">
+                  <p class="location__addres-title">Адреса</p>
+                  <p class="location__addres">вул. Комерційна, 1</p>
+                </div>
+              </div>
+              <div class="location__info-box">
+                <img src="../../images/info/clock.svg" alt="clock">
+                <div class="location__box-content">
+                  <p class="location__day">
+                    Пн-Чт, Нд: 
+                    <span class="location__time">12:00-20:00</span>
+                  </p>
+                  <p class="location__day">
+                    Пн-Чт, Нд: 
+                    <span class="location__time">12:00-20:00</span>
+                  </p>
+                </div>
+              </div>      
+            </div>
+          </div>
+        </div>
+        <!-- Повідомленя про локацію ліворуч кінець -->
+        
+        <!-- Меню топбар -->
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__logo">
+              <a href="/" class="header__logo-link">
+                <picture>
+                  <source srcset="../../images/logo-smal.svg"
+                  media="(max-width: 490px)">
+                  <img src="../../images/logo.svg" alt="logo">
+                </picture>
+              </a>
+            </div>
+            <div class="header__location">
+              <button class="header__location-btn">
+                Змінити локацію
+              </button>
+            </div>
+            <div class="header__search">
+              <input class="header__search-input" name="search" type="text" placeholder="Пошук ...">
+              <button class="header__search-btn"><img src="../../images/search.svg" alt=""></button>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__menu">
+                <li class="header__menu-item">
+                  <a href="tel:380975787801" class="header__menu-link">
+                    +38 (097)-578-78-01
+                  </a>
+                </li>
+                <li class="header__menu-list-like">
+                  <a href="/pages/menu/favorite.html" class="header__menu-like">
+                    <img src="../../images/like.svg" alt="header-like">
+                  </a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="/pages/basket.html" class="header__menu-basket">
+                    <img src="../../images/basket.svg" alt="header-basket">
+                  </a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="/pages/menu/login.html" class="header__menu-btn">
+                    <img src="../../images/menu.svg" alt="header-btn">
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- Меню топбар кінець -->
+      
+      
+      
+      
+      
+      
+      <div class="login-page">
+        <div class="wrapper-branch">
+          <div class="container">
+            <div class="login-page__inner">
+
+              <!-- side bar  -->
+              <div class="sidebar">
+                <div class="sidebar__login no">
+                  <div class="sidebar__login-img">
+                    <img class="sidebar__login-svg" src="../../images/user.svg" alt="">
+                  </div>
+                  <p class="sidebar__login-text">Авторизуйтесь для перегляду профілю</p>
+                  <a href="/pages/menu/login.html" class="sidebar__login-btn">Увійти</a>
+                </div>
+
+                <!-- <div class="login-page__login-true">
+                  <div class="login-page__login-img on">
+                      <img class="login-page__login-svg" src="../../images/user.svg" alt="">
+                    </div>
+                    <div class="login-page__on">
+                      <h5 class="login-page__title">
+                          Юрій Поваров
+                      </h5>
+                      <p class="login-page__num">
+                          +380979999999
+                      </p>
+                      <p class="login-page__date">
+                          27.03.1984
+                      </p>
+                      <p class="login-page__gifts">
+                          Бонуси: 350
+                      </p>
+                    </div>
+                    <div class="login-page-edit">
+                      <button class="edit__info"><img src="../../images/pencil.svg" alt="edit"></button>
+                    </div>
+                </div> -->
+
+                <ul class="sidebar__menu">
+                  <li class="sidebar__item-li">
+                    <a href="/pages/menu/orders.html" class="sidebar__item">
+                      <img class="sidebar__img " src="../../images/sidebar/clipboard-list.svg" alt="svg">
+                      <p class="sidebar__text">Мої замовлення</p>
+                    </a>
+                  </li>
+                  <li class="sidebar__item-li">
+                    <a href="/pages/menu/favorite.html" class="sidebar__item">
+                      <img class="sidebar__img " src="../../images/sidebar/heart.svg" alt="svg">
+                      <p class="sidebar__text">Обране</p>
+                    </a>
+                  </li>
+                  <li class="sidebar__item-li">
+                    <a href="/pages/menu/my-adres.html" class="sidebar__item">
+                      <img class="sidebar__img " src="../../images/sidebar/map-pin.svg" alt="svg">
+                      <p class="sidebar__text">Мої адреси</p>
+                    </a>
+                  </li>
+                  <li class="sidebar__item-li profile">
+                    <a href="/pages/menu/notification.html" class="sidebar__item">
+                      <img class="sidebar__img " src="../../images/sidebar/bell-ringing.svg" alt="svg">
+                      <p class="sidebar__text">Повідомлення</p>
+                    </a>
+                  </li>
+                  <li class="sidebar__item-li notification">
+                    <a href="https://qrboss.com.ua/R0vZ" class="sidebar__item notification">
+                      <img class="sidebar__img" src="../../images/sidebar/message-dots.svg" alt="svg">
+                      <p class="sidebar__text notification">Залишити відгук</p>
+                    </a>
+                  </li>
+                  <li class="sidebar__item-li">
+                    <a href="#" class="sidebar__item">
+                      <img class="sidebar__img " src="../../images/sidebar/car.svg" alt="svg">
+                      <p class="sidebar__text">Доставка і вартість</p>
+                    </a>
+                  </li>
+                  <li class="sidebar__item-li">
+                    <a href="#" class="sidebar__item">
+                      <img class="sidebar__img " src="../../images/sidebar/map-pin.svg" alt="svg">
+                      <p class="sidebar__text">Адреса</p>
+                    </a>
+                  </li>
+                  <li class="sidebar__item-li delivery">
+                    <a href="/pages/menu/time-work.html" class="sidebar__item">
+                      <img class="sidebar__img " src="../../images/sidebar/clock.svg" alt="svg">
+                      <p class="sidebar__text">Час роботи</p>
+                    </a>
+                  </li>
+                  <li class="sidebar__item-li">
+                    <a href="/pages/menu/loyalty.html" class="sidebar__item">
+                      <img class="sidebar__img " src="../../images/sidebar/gift.svg" alt="svg">
+                      <p class="sidebar__text">Програма лояльності</p>
+                    </a>
+                  </li>
+                  <li class="sidebar__item-li">
+                    <a href="/pages/menu/language.html" class="sidebar__item">
+                      <img class="sidebar__img " src="../../images/sidebar/language.svg" alt="svg">
+                      <p class="sidebar__text">Мова</p>
+                    </a>
+                  </li>
+                  <li class="sidebar__item-li">
+                    <a href="/pages/menu/about-qr.html" class="sidebar__item">
+                      <img class="sidebar__img " src="../../images/sidebar/book-2.svg" alt="svg">
+                      <p class="sidebar__text">Про розробника</p>
+                    </a>
+                  </li>
+                  <li class="sidebar__item-li">
+                    <a href="/pages/menu/login.html" class="sidebar__item">
+                      <img class="sidebar__img " src="../../images/sidebar/logout.svg" alt="svg">
+                      <p class="sidebar__text">Вихід</p>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <!-- side bar  -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      <!-- Login сторінка  -->
+    </main>
+      
+      <script type="module" src="../../js/main.min.js"></script>
+</body>
+
+</html>

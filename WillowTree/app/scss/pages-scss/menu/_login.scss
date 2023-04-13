@@ -1,0 +1,255 @@
+@import '../../vars';
+@import '../../fonts';
+@import '../../reset';
+@import '../../libs';
+@import '../../global';
+@import "../../media";
+
+
+
+
+
+// Сторінка логін
+.login-page{
+    &__login-img{
+        background-color: #3D405B;
+        padding: 12.5px 13.5px;
+        border-radius: 100%;
+        &.on{
+            width: 50px;
+            height: 50px;
+            margin-left: 20px;
+        }
+    }
+    &__login-true{
+        @extend %d-f; // Смотреть файл _vars.scss
+    }
+    &__on{
+        margin-left: 15px;
+    }
+    &__title{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        font-size: 16px;
+        line-height: 22px;
+        color: #3D405B;
+    }
+    &__num,
+    &__date,
+    &__gifts{
+        @extend %font_u_400; // Смотреть файл _vars.scss;
+        font-size: 14px;
+        line-height: 19px;
+        color: #3D405B;
+    }
+    &__inner{
+        @extend %d-f; // Смотреть файл _vars.scss
+        margin-top: 50px;
+    }
+    &__wrap-logo{
+        margin-bottom: 65px;
+    }
+    &__box{
+        @extend %d-f; // Смотреть файл _vars.scss
+        align-items: center;
+        flex-direction: column;
+        margin-top: 115px;
+        margin-left: 300px;
+        &-title{
+            display: none;
+            & img{
+                cursor: pointer;
+            }
+            &.active{
+                display: block;
+                position: absolute;
+                top: -136px;
+                left: 0;
+                background-color: #fff;
+                right: 0;
+                padding-left: 20px;
+                padding-top: 35px;
+            }
+        }
+        &.active{
+            justify-content: center;
+            display: flex;
+            position: absolute;
+            background-color: #fff;
+            // width: 100vh;
+            // height: 100vh;
+            top: 130px;
+            right: 0;
+            bottom: -20px;
+            left: -33px;
+            z-index: 999;
+        }
+    }
+    &__input{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        border: none;
+        border-bottom: 1px solid rgba(#3D405B, .3);
+        outline: none;
+        width: 100%;
+        width: 307px;
+        background-color: transparent;
+        transition: .5s;
+        padding-top: 20px;
+        font-size: 15px;
+        line-height: 17px;
+        color: #3D405B;
+        &:focus{
+            border-bottom: 1px solid #3D405B;;
+        }
+        &:focus ~ .login-page__lable,
+        &:not(:placeholder-shown) ~ .login-page__lable {
+            top: 0px;
+            @extend %font_u_400; // Смотреть файл _vars.scss
+            font-size: 12px;
+            line-height: 14px;
+            color: #696C87;
+        }
+        &.input-date{
+            margin-bottom: 5px;
+        }
+        &.sms{
+            &:focus ~ .login-page__lable,
+            &:placeholder-shown ~ .login-page__lable {
+            @extend %font_u_400; // Смотреть файл _vars.scss
+            top: 0px;
+            font-size: 12px;
+            line-height: 14px;
+            color: #696C87;
+        }
+        }
+    }
+    &__input-wrapper{
+        position: relative;
+        margin-bottom: 14px;
+    }
+    &__lable{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 15px;
+        line-height: 17px;
+        color: #3D405B;
+        cursor: text;
+        display: block;
+        position: absolute;
+        top: 13px;
+        
+    }
+    &__input-under{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        font-size: 12px;
+        line-height: 14px;
+        color: #0CA48F;
+    }
+    &__form{
+        max-width: 306px;
+    }
+    &__form-btn{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        border: none;
+        width: 100%;
+        padding: 10px 137px;
+        margin: 0;
+        background-color: #494C69;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+}
+// Сторінка логін кінець
+
+
+.sidebar{
+    &.active{
+        display: none;
+    }
+}
+
+// Сторінка логін true 
+.profile{
+    &__wrapper{
+        margin-left: 52px;
+    }
+    &__input{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        border: none;
+        width: 100%;
+        margin-right: 25px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid rgba(#3D405B, .3);
+        outline: none;
+        background-color: transparent;
+        transition: .5s;
+        padding-top: 20px;
+        font-size: 15px;
+        line-height: 17px;
+        color: #3D405B;
+        &:focus{
+            border-bottom: 1px solid #3D405B;;
+        }
+        &.input-date{
+            margin-bottom: 5px;
+        }
+        &:focus ~ .profile__lable,
+        &:not(:placeholder-shown) ~ .profile__lable {
+            top: 0px;
+            @extend %font_u_400; // Смотреть файл _vars.scss
+            font-size: 12px;
+            line-height: 14px;
+            color: #696C87;
+        }
+        
+    }
+    &__input-wrapper{
+        position: relative;
+        margin-bottom: 14px;
+        width: 800px;
+    }
+    &__lable{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 15px;
+        line-height: 17px;
+        color: #3D405B;
+        cursor: text;
+        display: block;
+        position: absolute;
+        top: 13px;
+        
+    }
+    &__input-under{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        font-size: 12px;
+        line-height: 14px;
+        color: #0CA48F;
+    }
+    &__form-btn{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        border: none;
+        width: 195px;
+        padding: 8px ;
+        margin: 0;
+        background-color: #494C69;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+}
+// Сторінка логін true кінець
+
+.edit__info{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    margin-left: 70px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,108 @@
+%font_i_400{
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+%font_i_800{
+    font-family: 'Inter';
+    font-weight: 800;
+}
+
+%font_u_700{
+    font-family: 'Ubuntu';
+    font-weight: 700;
+}
+
+%font_u_500{
+    font-family: 'Ubuntu';
+    font-weight: 500;
+}
+
+%font_u_400{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+}
+
+%d-f-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%d-f{
+    display: flex;
+}
+
+%d-f-sb{
+    display: flex;
+    justify-content: space-between;
+}
+
+%btn-0{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+%_variers-height{
+    --heightA: 301px;
+    --heightB: 216px;
+    --heightC:calc(var(--heightA) - var(--heightB));
+}
+
+%_variers-height-2{
+    --heightA: 301px;
+    --heightB: 200px;
+    --heightC:calc(var(--heightA) - var(--heightB));
+}
+
+%calc-height-B{
+    @extend %_variers-height;
+    min-height: calc(var(--heightB));
+}
+
+%calc-height-B-2{
+    @extend %_variers-height-2;
+    min-height: calc(var(--heightB));
+}
+
+%calc-height-A{
+    @extend %_variers-height;
+    min-height: calc(var(--heightA));
+}
+
+%calc-height-A-2{
+    @extend %_variers-height-2;
+    min-height: calc(var(--heightA));
+}
+
+%calc-margin_smal{
+    @extend %_variers-height;
+    margin-top: calc(var(--heightC) + 55px);
+}
+
+%calc-margin_smal-2{
+    @extend %_variers-height-2;
+    margin-top: calc(var(--heightC) + 55px - 30px);
+}
+
+%calc-margin_big{
+    @extend %_variers-height;
+    margin-top: calc(var(--heightC) + 140px);
+}
+
+%calc-margin_big-2{
+    @extend %_variers-height-2;
+    margin-top: calc(var(--heightC) + 140px - 15px);
+}
+
+%calc-margin_smal-3{
+    @extend %_variers-height-2;
+    margin-top: calc(var(--heightC) + 55px - 30px);
+}
+
+%calc-margin_big-3{
+    @extend %_variers-height-2;
+    margin-top: calc(var(--heightC) + 140px - 15px);
+}

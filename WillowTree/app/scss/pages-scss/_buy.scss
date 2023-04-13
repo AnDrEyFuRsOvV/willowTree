@@ -1,0 +1,386 @@
+.buy{
+    &__form{
+        display: flex;
+        flex-direction: column;
+    }
+    &__label.last{
+        border-bottom: none;
+        padding: 0;
+        margin: 0;
+    }
+    &__label{
+        min-width: 100%;
+        border-bottom: 1px solid rgba(#1F254D, 0.1);
+        padding-bottom: 7px;
+        margin-bottom: 23px;
+        &-span{
+            margin-bottom: 7px;
+            display: block;
+            font-family: 'Ubuntu';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #696C87;
+        }
+    }
+    &__label.adres{
+        cursor: pointer;
+    }
+    &__date{
+        width: 100%;
+        outline: none;
+        background: url(../images/bottom.svg) no-repeat;
+        background-position: calc(100% - 5px) ;
+        appearance: none;
+    }
+    &__adres{
+        cursor: pointer;
+    }
+    &__checkbox{
+        display: block;
+    }
+    &__delivery-categories{
+        position: relative;
+        border: none ;
+        color: #696C87;
+        font-family: 'Ubuntu';
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 17px;
+        &::placeholder{
+            color:rgba(#696C87 , 0.5) 
+        }
+        min-width: 100%;
+        max-width: 100%;
+        outline: none;
+        appearance: none;
+        padding-left: 26px;
+        background: url(../images/right.svg) no-repeat ;
+        background-position: calc(100% - 5px) ;
+        cursor: pointer;
+        & option{
+            cursor: pointer;
+        }
+    }
+    &__label-span.adres{
+        position: relative;
+        &::before{
+            content: url(../images/right.svg);
+            position: absolute;
+            right: 5px;
+            bottom: -25px;
+            z-index: 99;
+        }
+    }
+    &-name{
+        position: relative;
+        &::before{
+            content: url(../images/map.svg);
+            position: absolute;
+            left: 0;
+            bottom: -28px;
+            z-index: 99;
+        }
+    }
+    &-car{
+        position: relative;
+        &::before{
+            content: url(../images/car.svg);
+            position: absolute;
+            left: 0;
+            bottom: -28px;
+            z-index: 99;
+        }
+    }
+    &__adres-img{
+        position: relative;
+        &::after{
+            content: url(../images/map.svg);
+            position: absolute;
+            left: 0;
+            bottom: -28px;
+            z-index: 99;
+        }
+    }
+    &-date{
+        position: relative;
+        &::before{
+            content: url(../images/calendar-time.svg);
+            position: absolute;
+            left: 0;
+            bottom: -28px;
+            z-index: 99;
+        }
+    }
+    &-time{
+        position: relative;
+        &::before{
+            content: url(../images/clock-1.svg);
+            position: absolute;
+            left: 0;
+            bottom: -28px;
+            z-index: 99;
+        }
+    }
+    .buy__input{
+        padding-left: 26px;
+        position: relative;
+    }
+    &__input,
+    &__textarea{
+        border: none ;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        color: #696C87;
+        font-family: 'Ubuntu';
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 17px;
+        outline: none;
+        width: 100%;
+        &::placeholder{
+            color:rgba(#696C87 , 0.5) 
+        }
+    }
+    &__textarea{
+        min-width: 100%;
+        max-width: 100%;
+        border-bottom: 1px solid rgba(#1F254D, 0.1);
+        margin-bottom: 30px;
+        outline: none;
+        cursor: text;
+        &.buy__input{
+            padding-left: 0;
+        }
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        & span{
+            font-family: 'Ubuntu';
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 15px;
+            color: #3D405B;
+            cursor: pointer;
+        }
+    }
+    &__chekboxes{
+        margin-top: 17px;
+        margin-left: 20px;
+        margin-bottom: 35px;
+    }
+    &__box-img{
+        margin-left: 19px;
+        margin-right: 11px;
+        cursor: pointer;
+    }
+    &__box-span{
+        margin-left: 10px;
+    }
+    &__chek{
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    &__checkbox.first{
+       position: absolute;
+       width: 1px;
+       height: 1px;
+       overflow: hidden;
+       clip: rect(0 0 0 0); 
+       padding-left: 22px;
+    }
+    &__checkbox.second{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0); 
+        padding-left: 24px;
+     }
+    &__style{
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+        border: 2px solid #696C87;
+        border-radius: 100%;
+        position: absolute;
+        margin-left: -22px;
+        &.second{
+            width: 20px;
+            height: 20px;
+            margin-left: -24px;
+            border-radius: 6px;
+        }
+    }
+    &__checkbox.first:checked + .buy__style::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        width: 8px;
+        border-radius: 100%;
+        height: 8px;
+        background-color: #494C69;
+    }
+    &__checkbox.second:checked + .buy__style.second::before{
+        content: url(../images/check.svg);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #696C87;
+    }
+    &__slider-text{
+        font-family: 'Ubuntu';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #3D405B;
+        margin-bottom: 16px;
+    }
+    &__slider-span{
+        color: #EB3A65;
+    }
+    &__slider{
+        margin-bottom: 16px;
+        max-width: 344px;
+    }
+    &__bonuse-span{
+        color: #EB3A65;
+    }
+    &__bonuse-text{
+        font-family: 'Ubuntu';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #3D405B;
+        margin-bottom: 3px;
+    }
+    &__form-end{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+    &__submit{
+        border: none;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        height: 40px;
+        width: 169px;
+        margin-right: 23px;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover{
+            opacity: 0.8;
+        }
+        &:active{
+            opacity: 0.5;
+        }
+    }
+    &__delivery-price{
+        font-family: 'Ubuntu';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #3D405B;
+    }
+    &__all-price{
+        font-family: 'Ubuntu';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #3D405B;
+    }
+}
+
+.buy-true{
+    background-image: url(../images/bg-buy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 180px;
+    }
+    &__img{
+        margin-top: 186px;
+    }
+    &__title{
+        font-family: 'Ubuntu';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 29px;
+        color: #3D405B;
+        text-align: center;
+        margin-top: 30px;
+    }
+    &__text{
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #3D405B;
+        text-align: center;
+        margin-top: 10px;
+    }
+    &__btn{
+        background-color: #494C69;
+        border-radius: 8px;
+        border: none;
+        margin: 0;
+        padding: 11px 107px;
+        font-family: 'Ubuntu';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 71px;
+        cursor: pointer;
+    }
+}
+
+
+.my-addres{
+    min-width: 100%;
+    border-bottom: 1px solid rgba(#1F254D, 0.1);
+    padding-bottom: 7px;
+    margin-bottom: 23px;
+}
+
+
+.footer.buy{
+    margin-top: 0;
+}
+#rangeSlidere .noUi-handle {
+    /* Стили для хендла */
+    background-color: #EB3A65;
+}
+
+
+// #rangeSlidere .noUi-target{
+//     background-color: rgba(#EB3A65, .2);
+// }
+
+#rangeSlidere .noUi-connect{
+    background-color: #EB3A65;
+}
+
+#rangeSlidere .noUi-connects{
+    background-color: #FBD8E0;
+}
+
+
+
+input::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}

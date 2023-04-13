@@ -1,0 +1,38 @@
+@media (max-width: 1100px){
+    .login-page__box{
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 900px){
+    .login-page__box{
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 800px){
+    .sidebar.login{
+        display: none;
+    }
+    .sidebar.sms{
+        display: none;
+    }
+    .login-page__box{
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .login-page__inner{
+        justify-content: center;
+    }
+    .login-page__box-title{
+        display: block;
+        position: absolute;
+        top: -130px;
+        right: 0;
+        left: 10px;
+        padding-top: 50px;
+        background-color: #fff;
+    }
+}
+
+

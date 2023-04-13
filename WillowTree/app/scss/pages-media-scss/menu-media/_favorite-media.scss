@@ -1,0 +1,194 @@
+
+
+@media (max-width: 1100px){
+    .favorite__box{
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 1000px){
+    .favorite__box{
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 850px){
+    .sidebar.favorite{
+        display: none;
+    }
+    .login-page__inner{
+        justify-content: center;
+    }
+    .favorite-page__box-title{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        position: absolute;
+        top: -150px;
+        right: 0;
+        left: 0;
+        padding-top: 50px;
+        padding-left: 10px;
+        background-color: #fff;
+        &-text{
+            font-family: 'Ubuntu';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            color: #3D405B;
+            z-index: 999;
+            // text-align: center;
+            position: absolute;
+            left: 40%;
+        }
+    }
+    .favorite-page__box-title img{
+        cursor: pointer;
+    }
+    .favorite__box{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .favorite__cards{
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 705px){
+    .favorite__cards{
+        justify-content: center;
+    }
+    .favorite-page__box-title{
+        &-text{
+            left: 47%;
+        }
+    }
+    .favorite__card{
+        &:last-child{
+            margin-right: 10px;
+        }
+    }
+
+}
+
+@media (max-width: 495px){
+    // .favorite-box{
+    //     width: 100%;
+    // }
+    // .favorite-box__img{
+    //     width: 100%;
+    // }
+    // .login-page__inner{
+    //     width: 100%;
+    // }
+    .favorite__body{
+        margin-left: 0;
+    }
+    .favorite-page__box-title{
+        &-text{
+            left: 43%;
+        }
+    }
+    .favorite__card{
+        margin-right: 0;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    .favorite__cards{
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 460px){
+    .favorite{
+        &__card-title{
+            font-size: 14px;
+            line-height: 14px;
+          }
+          &__card-buy{
+            font-size: 14px;
+            line-height: 14px;
+          }
+          &__card-real-price{
+            display: none;
+          }
+          &__card-price{
+            font-size: 14px;
+            line-height: 14px;
+          }
+          &__card-btn{
+            font-size: 14px;
+            line-height: 14px;
+            padding: 6px 19px;
+          }
+          
+          &__card-weight{
+            --heightA: 171px;
+            --heightB: 165px;
+            --heightC:calc(var(--heightA) - var(--heightB));
+            margin-top: calc(var(--heightC) + 63px);
+          }
+          &__card-product{
+            &.favorite__card-long{
+                .favorite__card-weight{
+                  margin-top: calc(var(--heightC) + 130px);
+                }
+            }
+          }
+          &__card{
+            max-width: 155px;
+            margin-right: 10px;
+            &:last-child{
+                margin-right: 10px;
+            }
+          }
+          &__card-product{
+            background-position: center;
+            max-width: 155px;
+            min-width: 10px;
+            max-height: 155px;
+            min-height: 0;
+            &.favorite__card-long{
+                min-width: 155px;
+                max-width: 155px;
+            }
+          }
+    }
+    .login-page__inner{
+        margin-top: 30px;
+    }
+    .favorite-page__box-title{
+        top: -120px;
+    }
+    .favorite__cards{
+        justify-content: center;
+    }
+    .favorite__card-weight{
+        margin-top: 85px;
+    }
+}
+
+@media (max-width: 375px){
+    .favorite__cards{
+        justify-content: space-between;
+    }
+    .favorite__card{
+        margin-right: 0;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 360px){
+    .favorite__cards{
+        justify-content: center;
+    }
+    .favorite__card{
+        margin-right: 5px;
+        &:last-child{
+            margin-right: 5px;
+        }
+    }
+}

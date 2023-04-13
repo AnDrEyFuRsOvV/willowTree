@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" login-page="width=device-width, initial-scale=1.0">
+  <title>Willow Tree</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.min.css">
+</head>
+
+<body>
+
+  
+
+
+  <!-- My adres  -->
+  <main class="main">
+
+    <!-- Меню топбар -->
+    <header class="header">
+      
+      <!-- Меню топбар -->
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a href="/" class="header__logo-link">
+              <picture>
+                <source srcset="images/logo-smal.svg"
+                media="(max-width: 490px)">
+                <img src="../../images/logo.svg" alt="logo">
+              </picture>
+            </a>
+          </div>
+          <div class="header__location">
+            <button class="header__location-btn">
+              Змінити локацію
+            </button>
+          </div>
+          <div class="header__search">
+            <input class="header__search-input" name="search" type="text" placeholder="Пошук ...">
+            <button class="header__search-btn"><img src="../../images/search.svg" alt=""></button>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a href="tel:380975787801" class="header__menu-link">
+                  +38 (097)-578-78-01
+                </a>
+              </li>
+              <li class="header__menu-list-like">
+                <a href="/pages/menu/favorite.html" class="header__menu-like">
+                  <img src="../../images/like.svg" alt="header-like">
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/pages/basket.html" class="header__menu-basket">
+                  <img src="../../images/basket.svg" alt="header-basket">
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/pages/menu/login.html" class="header__menu-btn">
+                  <img src="../../images/menu.svg" alt="header-btn">
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Меню топбар кінець -->
+
+    <div class="login-page">
+      <div class="wrapper-branch">
+        <div class="container">
+          <div class="login-page__inner">
+
+            <!-- side bar  -->
+            <div class="sidebar not-visible">
+              <!-- <div class="sidebar__login no">
+                <div class="sidebar__login-img">
+                  <img class="sidebar__login-svg" src="../../images/user.svg" alt="">
+                </div>
+                <p class="sidebar__login-text">Авторизуйтесь для перегляду профілю</p>
+                <a href="/pages/menu/login.html" class="sidebar__login-btn">Увійти</a>
+              </div> -->
+
+              <div class="login-page__login-true">
+                <div class="login-page__login-img on">
+                    <img class="login-page__login-svg" src="../../images/user.svg" alt="">
+                  </div>
+                  <div class="login-page__on">
+                    <h5 class="login-page__title">
+                        Юрій Поваров
+                    </h5>
+                    <p class="login-page__num">
+                        +380979999999
+                    </p>
+                    <p class="login-page__date">
+                        27.03.1984
+                    </p>
+                    <p class="login-page__gifts">
+                        Бонуси: 350
+                    </p>
+                  </div>
+                  <div class="login-page-edit">
+                    <button class="edit__info"><img src="../../images/pencil.svg" alt="edit"></button>
+                  </div>
+              </div>
+
+              <ul class="sidebar__menu">
+                <li class="sidebar__item-li">
+                  <a href="/pages/menu/orders.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/clipboard-list.svg" alt="svg">
+                    <p class="sidebar__text">Мої замовлення</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li">
+                  <a href="/pages/menu/favorite.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/heart.svg" alt="svg">
+                    <p class="sidebar__text">Обране</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li">
+                  <a href="/pages/menu/my-adres.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/map-pin.svg" alt="svg">
+                    <p class="sidebar__text">Мої адреси</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li profile">
+                  <a href="/pages/menu/notification.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/bell-ringing.svg" alt="svg">
+                    <p class="sidebar__text">Повідомлення</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li notification">
+                  <a href="https://qrboss.com.ua/R0vZ" class="sidebar__item notification">
+                    <img class="sidebar__img" src="../../images/sidebar/message-dots.svg" alt="svg">
+                    <p class="sidebar__text notification">Залишити відгук</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li">
+                  <a href="#" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/car.svg" alt="svg">
+                    <p class="sidebar__text">Доставка і вартість</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li">
+                  <a href="#" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/map-pin.svg" alt="svg">
+                    <p class="sidebar__text">Адреса</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li delivery">
+                  <a href="/pages/menu/time-work.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/clock.svg" alt="svg">
+                    <p class="sidebar__text">Час роботи</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li">
+                  <a href="/pages/menu/loyalty.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/gift.svg" alt="svg">
+                    <p class="sidebar__text">Програма лояльності</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li">
+                  <a href="/pages/menu/language.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/language.svg" alt="svg">
+                    <p class="sidebar__text">Мова</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li">
+                  <a href="/pages/menu/about-qr.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/book-2.svg" alt="svg">
+                    <p class="sidebar__text">Про розробника</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li">
+                  <a href="/pages/menu/login.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/logout.svg" alt="svg">
+                    <p class="sidebar__text">Вихід</p>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+            <!-- side bar  -->
+
+            <div class="favorite-page__box-title">
+              <a href="/pages/menu/sidebar.html">
+                <img src="../../images/arrow-sdebar.svg" alt="">
+              </a>
+              <p class="favorite-page__box-title-text">Обране</p>
+            </div>
+
+
+            <!-- Favorite cards body -->
+            <div class="favorite__body">
+              <!-- Favorite cards-->
+              <div class="favorite__cards">
+                <!-- Favorite card -->
+                <div class="favorite__card">
+                  <div class="favorite__card-product">
+                    <div class="favorite__card-product-info">
+                      <div class="favorite__card-discount ">
+                        <span class="favorite__card-percent ">-15%</span>
+                      </div>
+                      <button class="favorite__card-like ">
+                        <svg class="favorite__card-svg -svg" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.4359 10.8135C19.7282 10.52 19.7273 10.0451 19.4338 9.7528C19.1403 9.46048 18.6655 9.46141 18.3731 9.75487L19.4359 10.8135ZM11.0474 18.172L10.516 18.7013C10.6567 18.8426 10.8479 18.922 11.0474 18.922C11.2468 18.922 11.438 18.8426 11.5787 18.7013L11.0474 18.172ZM3.72158 9.75487C3.42926 9.46141 2.95439 9.46048 2.66093 9.7528C2.36746 10.0451 2.36654 10.52 2.65886 10.8135L3.72158 9.75487ZM2.66349 10.8182C2.95839 11.1091 3.43325 11.1058 3.72413 10.8109C4.01501 10.516 4.01175 10.0411 3.71685 9.75026L2.66349 10.8182ZM11.0473 3.31175L10.4425 3.75524C10.5833 3.94733 10.807 4.06109 11.0452 4.06175C11.2834 4.06241 11.5078 3.94989 11.6497 3.75858L11.0473 3.31175ZM18.3753 9.7591C18.0818 10.0513 18.0807 10.5262 18.373 10.8198C18.6652 11.1133 19.1401 11.1143 19.4336 10.8221L18.3753 9.7591ZM18.3731 9.75487L10.516 17.6427L11.5787 18.7013L19.4359 10.8135L18.3731 9.75487ZM11.5787 17.6427L3.72158 9.75487L2.65886 10.8135L10.516 18.7013L11.5787 17.6427ZM3.71685 9.75026C2.5043 8.55425 2.05436 6.76553 2.55837 5.12247L1.12432 4.68257C0.457612 6.85602 1.05019 9.22687 2.66349 10.8182L3.71685 9.75026ZM2.55837 5.12247C3.06209 3.48035 4.43005 2.27097 6.09068 1.98401L5.83526 0.50592C3.609 0.890612 1.79131 2.50819 1.12432 4.68257L2.55837 5.12247ZM6.09068 1.98401C7.75064 1.69718 9.43296 2.37843 10.4425 3.75524L11.6521 2.86827C10.3096 1.0373 8.0622 0.121112 5.83526 0.50592L6.09068 1.98401ZM11.6497 3.75858C12.6634 2.39202 14.3421 1.71982 15.996 2.00934L16.2547 0.53181C14.0358 0.143407 11.7931 1.04744 10.445 2.86492L11.6497 3.75858ZM15.996 2.00934C17.6506 2.29898 19.013 3.50456 19.5171 5.14068L20.9506 4.69901C20.2831 2.53255 18.4728 0.920097 16.2547 0.53181L15.996 2.00934ZM19.5171 5.14068C20.0215 6.77773 19.5784 8.56124 18.3753 9.7591L19.4336 10.8221C21.0343 9.22842 21.6178 6.86455 20.9506 4.69901L19.5171 5.14068Z" fill="#696C87"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="shop__card-weight-margin favorite">
+                    <div class="favorite__card-weight ">
+                      <span class="favorite__weight ">100г.</span>
+                    </div>
+                    </div>
+                  </div>
+                  <h4 class="favorite__card-title ">Норвезький вершковий суп</h4>
+                  <div class="favorite__card-buy ">
+                    <p class="favorite__card-price ">
+                      <span class="favorite__card-real-price ">220 000 ₴</span> 
+                      190 000 ₴
+                    </p>
+                    <button class="favorite__card-btn ">Купити</button>
+                  </div>
+                </div>
+                <!-- Favorite card -->
+
+                <!-- Favorite card -->
+                <div class="favorite__card">
+                  <div class="favorite__card-product">
+                    <div class="favorite__card-product-info">
+                      <div class="favorite__card-discount ">
+                        <span class="favorite__card-percent ">-15%</span>
+                      </div>
+                      <button class="favorite__card-like ">
+                        <svg class="favorite__card-svg -svg" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.4359 10.8135C19.7282 10.52 19.7273 10.0451 19.4338 9.7528C19.1403 9.46048 18.6655 9.46141 18.3731 9.75487L19.4359 10.8135ZM11.0474 18.172L10.516 18.7013C10.6567 18.8426 10.8479 18.922 11.0474 18.922C11.2468 18.922 11.438 18.8426 11.5787 18.7013L11.0474 18.172ZM3.72158 9.75487C3.42926 9.46141 2.95439 9.46048 2.66093 9.7528C2.36746 10.0451 2.36654 10.52 2.65886 10.8135L3.72158 9.75487ZM2.66349 10.8182C2.95839 11.1091 3.43325 11.1058 3.72413 10.8109C4.01501 10.516 4.01175 10.0411 3.71685 9.75026L2.66349 10.8182ZM11.0473 3.31175L10.4425 3.75524C10.5833 3.94733 10.807 4.06109 11.0452 4.06175C11.2834 4.06241 11.5078 3.94989 11.6497 3.75858L11.0473 3.31175ZM18.3753 9.7591C18.0818 10.0513 18.0807 10.5262 18.373 10.8198C18.6652 11.1133 19.1401 11.1143 19.4336 10.8221L18.3753 9.7591ZM18.3731 9.75487L10.516 17.6427L11.5787 18.7013L19.4359 10.8135L18.3731 9.75487ZM11.5787 17.6427L3.72158 9.75487L2.65886 10.8135L10.516 18.7013L11.5787 17.6427ZM3.71685 9.75026C2.5043 8.55425 2.05436 6.76553 2.55837 5.12247L1.12432 4.68257C0.457612 6.85602 1.05019 9.22687 2.66349 10.8182L3.71685 9.75026ZM2.55837 5.12247C3.06209 3.48035 4.43005 2.27097 6.09068 1.98401L5.83526 0.50592C3.609 0.890612 1.79131 2.50819 1.12432 4.68257L2.55837 5.12247ZM6.09068 1.98401C7.75064 1.69718 9.43296 2.37843 10.4425 3.75524L11.6521 2.86827C10.3096 1.0373 8.0622 0.121112 5.83526 0.50592L6.09068 1.98401ZM11.6497 3.75858C12.6634 2.39202 14.3421 1.71982 15.996 2.00934L16.2547 0.53181C14.0358 0.143407 11.7931 1.04744 10.445 2.86492L11.6497 3.75858ZM15.996 2.00934C17.6506 2.29898 19.013 3.50456 19.5171 5.14068L20.9506 4.69901C20.2831 2.53255 18.4728 0.920097 16.2547 0.53181L15.996 2.00934ZM19.5171 5.14068C20.0215 6.77773 19.5784 8.56124 18.3753 9.7591L19.4336 10.8221C21.0343 9.22842 21.6178 6.86455 20.9506 4.69901L19.5171 5.14068Z" fill="#696C87"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="shop__card-weight-margin favorite">
+                    <div class="favorite__card-weight ">
+                      <span class="favorite__weight ">100г.</span>
+                    </div>
+                    </div>
+                  </div>
+                  <h4 class="favorite__card-title ">Норвезький вершковий суп</h4>
+                  <div class="favorite__card-buy ">
+                    <p class="favorite__card-price ">
+                      <span class="favorite__card-real-price ">220 000 ₴</span> 
+                      190 000 ₴
+                    </p>
+                    <button class="favorite__card-btn ">Купити</button>
+                  </div>
+                </div>
+                <!-- Favorite card -->
+
+                <!-- Favorite card -->
+                <div class="favorite__card">
+                  <div class="favorite__card-product">
+                    <div class="favorite__card-product-info">
+                      <div class="favorite__card-discount ">
+                        <span class="favorite__card-percent ">-15%</span>
+                      </div>
+                      <button class="favorite__card-like ">
+                        <svg class="favorite__card-svg -svg" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.4359 10.8135C19.7282 10.52 19.7273 10.0451 19.4338 9.7528C19.1403 9.46048 18.6655 9.46141 18.3731 9.75487L19.4359 10.8135ZM11.0474 18.172L10.516 18.7013C10.6567 18.8426 10.8479 18.922 11.0474 18.922C11.2468 18.922 11.438 18.8426 11.5787 18.7013L11.0474 18.172ZM3.72158 9.75487C3.42926 9.46141 2.95439 9.46048 2.66093 9.7528C2.36746 10.0451 2.36654 10.52 2.65886 10.8135L3.72158 9.75487ZM2.66349 10.8182C2.95839 11.1091 3.43325 11.1058 3.72413 10.8109C4.01501 10.516 4.01175 10.0411 3.71685 9.75026L2.66349 10.8182ZM11.0473 3.31175L10.4425 3.75524C10.5833 3.94733 10.807 4.06109 11.0452 4.06175C11.2834 4.06241 11.5078 3.94989 11.6497 3.75858L11.0473 3.31175ZM18.3753 9.7591C18.0818 10.0513 18.0807 10.5262 18.373 10.8198C18.6652 11.1133 19.1401 11.1143 19.4336 10.8221L18.3753 9.7591ZM18.3731 9.75487L10.516 17.6427L11.5787 18.7013L19.4359 10.8135L18.3731 9.75487ZM11.5787 17.6427L3.72158 9.75487L2.65886 10.8135L10.516 18.7013L11.5787 17.6427ZM3.71685 9.75026C2.5043 8.55425 2.05436 6.76553 2.55837 5.12247L1.12432 4.68257C0.457612 6.85602 1.05019 9.22687 2.66349 10.8182L3.71685 9.75026ZM2.55837 5.12247C3.06209 3.48035 4.43005 2.27097 6.09068 1.98401L5.83526 0.50592C3.609 0.890612 1.79131 2.50819 1.12432 4.68257L2.55837 5.12247ZM6.09068 1.98401C7.75064 1.69718 9.43296 2.37843 10.4425 3.75524L11.6521 2.86827C10.3096 1.0373 8.0622 0.121112 5.83526 0.50592L6.09068 1.98401ZM11.6497 3.75858C12.6634 2.39202 14.3421 1.71982 15.996 2.00934L16.2547 0.53181C14.0358 0.143407 11.7931 1.04744 10.445 2.86492L11.6497 3.75858ZM15.996 2.00934C17.6506 2.29898 19.013 3.50456 19.5171 5.14068L20.9506 4.69901C20.2831 2.53255 18.4728 0.920097 16.2547 0.53181L15.996 2.00934ZM19.5171 5.14068C20.0215 6.77773 19.5784 8.56124 18.3753 9.7591L19.4336 10.8221C21.0343 9.22842 21.6178 6.86455 20.9506 4.69901L19.5171 5.14068Z" fill="#696C87"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="shop__card-weight-margin favorite">
+                    <div class="favorite__card-weight ">
+                      <span class="favorite__weight ">100г.</span>
+                    </div>
+                    </div>
+                  </div>
+                  <h4 class="favorite__card-title ">Норвезький вершковий суп</h4>
+                  <div class="favorite__card-buy ">
+                    <p class="favorite__card-price ">
+                      <span class="favorite__card-real-price ">220 000 ₴</span> 
+                      190 000 ₴
+                    </p>
+                    <button class="favorite__card-btn ">Купити</button>
+                  </div>
+                </div>
+                <!-- Favorite card -->
+
+                <!-- Favorite card -->
+                <div class="favorite__card">
+                  <div class="favorite__card-product">
+                    <div class="favorite__card-product-info">
+                      <div class="favorite__card-discount ">
+                        <span class="favorite__card-percent ">-15%</span>
+                      </div>
+                      <button class="favorite__card-like ">
+                        <svg class="favorite__card-svg -svg" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.4359 10.8135C19.7282 10.52 19.7273 10.0451 19.4338 9.7528C19.1403 9.46048 18.6655 9.46141 18.3731 9.75487L19.4359 10.8135ZM11.0474 18.172L10.516 18.7013C10.6567 18.8426 10.8479 18.922 11.0474 18.922C11.2468 18.922 11.438 18.8426 11.5787 18.7013L11.0474 18.172ZM3.72158 9.75487C3.42926 9.46141 2.95439 9.46048 2.66093 9.7528C2.36746 10.0451 2.36654 10.52 2.65886 10.8135L3.72158 9.75487ZM2.66349 10.8182C2.95839 11.1091 3.43325 11.1058 3.72413 10.8109C4.01501 10.516 4.01175 10.0411 3.71685 9.75026L2.66349 10.8182ZM11.0473 3.31175L10.4425 3.75524C10.5833 3.94733 10.807 4.06109 11.0452 4.06175C11.2834 4.06241 11.5078 3.94989 11.6497 3.75858L11.0473 3.31175ZM18.3753 9.7591C18.0818 10.0513 18.0807 10.5262 18.373 10.8198C18.6652 11.1133 19.1401 11.1143 19.4336 10.8221L18.3753 9.7591ZM18.3731 9.75487L10.516 17.6427L11.5787 18.7013L19.4359 10.8135L18.3731 9.75487ZM11.5787 17.6427L3.72158 9.75487L2.65886 10.8135L10.516 18.7013L11.5787 17.6427ZM3.71685 9.75026C2.5043 8.55425 2.05436 6.76553 2.55837 5.12247L1.12432 4.68257C0.457612 6.85602 1.05019 9.22687 2.66349 10.8182L3.71685 9.75026ZM2.55837 5.12247C3.06209 3.48035 4.43005 2.27097 6.09068 1.98401L5.83526 0.50592C3.609 0.890612 1.79131 2.50819 1.12432 4.68257L2.55837 5.12247ZM6.09068 1.98401C7.75064 1.69718 9.43296 2.37843 10.4425 3.75524L11.6521 2.86827C10.3096 1.0373 8.0622 0.121112 5.83526 0.50592L6.09068 1.98401ZM11.6497 3.75858C12.6634 2.39202 14.3421 1.71982 15.996 2.00934L16.2547 0.53181C14.0358 0.143407 11.7931 1.04744 10.445 2.86492L11.6497 3.75858ZM15.996 2.00934C17.6506 2.29898 19.013 3.50456 19.5171 5.14068L20.9506 4.69901C20.2831 2.53255 18.4728 0.920097 16.2547 0.53181L15.996 2.00934ZM19.5171 5.14068C20.0215 6.77773 19.5784 8.56124 18.3753 9.7591L19.4336 10.8221C21.0343 9.22842 21.6178 6.86455 20.9506 4.69901L19.5171 5.14068Z" fill="#696C87"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="shop__card-weight-margin favorite">
+                    <div class="favorite__card-weight ">
+                      <span class="favorite__weight ">100г.</span>
+                    </div>
+                    </div>
+                  </div>
+                  <h4 class="favorite__card-title ">Норвезький вершковий суп</h4>
+                  <div class="favorite__card-buy ">
+                    <p class="favorite__card-price ">
+                      <span class="favorite__card-real-price ">220 000 ₴</span> 
+                      190 000 ₴
+                    </p>
+                    <button class="favorite__card-btn ">Купити</button>
+                  </div>
+                </div>
+                <!-- Favorite card -->
+              </div>
+              <!-- Favorite cards -->
+
+              <!-- Favorite cards-->
+              <div class="favorite__cards">
+                <!-- Favorite card -->
+                <div class="favorite__card">
+                  <div class="favorite__card-product favorite__card-long">
+                    <div class="favorite__card-product-info">
+                      <div class="favorite__card-discount ">
+                        <span class="favorite__card-percent ">-15%</span>
+                      </div>
+                      <button class="favorite__card-like ">
+                        <svg class="favorite__card-svg -svg" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.4359 10.8135C19.7282 10.52 19.7273 10.0451 19.4338 9.7528C19.1403 9.46048 18.6655 9.46141 18.3731 9.75487L19.4359 10.8135ZM11.0474 18.172L10.516 18.7013C10.6567 18.8426 10.8479 18.922 11.0474 18.922C11.2468 18.922 11.438 18.8426 11.5787 18.7013L11.0474 18.172ZM3.72158 9.75487C3.42926 9.46141 2.95439 9.46048 2.66093 9.7528C2.36746 10.0451 2.36654 10.52 2.65886 10.8135L3.72158 9.75487ZM2.66349 10.8182C2.95839 11.1091 3.43325 11.1058 3.72413 10.8109C4.01501 10.516 4.01175 10.0411 3.71685 9.75026L2.66349 10.8182ZM11.0473 3.31175L10.4425 3.75524C10.5833 3.94733 10.807 4.06109 11.0452 4.06175C11.2834 4.06241 11.5078 3.94989 11.6497 3.75858L11.0473 3.31175ZM18.3753 9.7591C18.0818 10.0513 18.0807 10.5262 18.373 10.8198C18.6652 11.1133 19.1401 11.1143 19.4336 10.8221L18.3753 9.7591ZM18.3731 9.75487L10.516 17.6427L11.5787 18.7013L19.4359 10.8135L18.3731 9.75487ZM11.5787 17.6427L3.72158 9.75487L2.65886 10.8135L10.516 18.7013L11.5787 17.6427ZM3.71685 9.75026C2.5043 8.55425 2.05436 6.76553 2.55837 5.12247L1.12432 4.68257C0.457612 6.85602 1.05019 9.22687 2.66349 10.8182L3.71685 9.75026ZM2.55837 5.12247C3.06209 3.48035 4.43005 2.27097 6.09068 1.98401L5.83526 0.50592C3.609 0.890612 1.79131 2.50819 1.12432 4.68257L2.55837 5.12247ZM6.09068 1.98401C7.75064 1.69718 9.43296 2.37843 10.4425 3.75524L11.6521 2.86827C10.3096 1.0373 8.0622 0.121112 5.83526 0.50592L6.09068 1.98401ZM11.6497 3.75858C12.6634 2.39202 14.3421 1.71982 15.996 2.00934L16.2547 0.53181C14.0358 0.143407 11.7931 1.04744 10.445 2.86492L11.6497 3.75858ZM15.996 2.00934C17.6506 2.29898 19.013 3.50456 19.5171 5.14068L20.9506 4.69901C20.2831 2.53255 18.4728 0.920097 16.2547 0.53181L15.996 2.00934ZM19.5171 5.14068C20.0215 6.77773 19.5784 8.56124 18.3753 9.7591L19.4336 10.8221C21.0343 9.22842 21.6178 6.86455 20.9506 4.69901L19.5171 5.14068Z" fill="#696C87"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="shop__card-weight-margin favorite">
+                    <div class="favorite__card-weight ">
+                      <span class="favorite__weight ">100г.</span>
+                    </div>
+                    </div>
+                  </div>
+                  <h4 class="favorite__card-title ">Трикотажна сукня</h4>
+                  <div class="favorite__card-buy ">
+                    <p class="favorite__card-price ">
+                      <span class="favorite__card-real-price ">1200 000 ₴</span> 
+                      850 000 ₴
+                    </p>
+                    <button class="favorite__card-btn ">Купити</button>
+                  </div>
+                </div>
+                <!-- Favorite card -->
+
+                <!-- Favorite card -->
+                <div class="favorite__card">
+                  <div class="favorite__card-product favorite__card-long">
+                    <div class="favorite__card-product-info">
+                      <div class="favorite__card-discount ">
+                        <span class="favorite__card-percent ">-15%</span>
+                      </div>
+                      <button class="favorite__card-like ">
+                        <svg class="favorite__card-svg -svg" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.4359 10.8135C19.7282 10.52 19.7273 10.0451 19.4338 9.7528C19.1403 9.46048 18.6655 9.46141 18.3731 9.75487L19.4359 10.8135ZM11.0474 18.172L10.516 18.7013C10.6567 18.8426 10.8479 18.922 11.0474 18.922C11.2468 18.922 11.438 18.8426 11.5787 18.7013L11.0474 18.172ZM3.72158 9.75487C3.42926 9.46141 2.95439 9.46048 2.66093 9.7528C2.36746 10.0451 2.36654 10.52 2.65886 10.8135L3.72158 9.75487ZM2.66349 10.8182C2.95839 11.1091 3.43325 11.1058 3.72413 10.8109C4.01501 10.516 4.01175 10.0411 3.71685 9.75026L2.66349 10.8182ZM11.0473 3.31175L10.4425 3.75524C10.5833 3.94733 10.807 4.06109 11.0452 4.06175C11.2834 4.06241 11.5078 3.94989 11.6497 3.75858L11.0473 3.31175ZM18.3753 9.7591C18.0818 10.0513 18.0807 10.5262 18.373 10.8198C18.6652 11.1133 19.1401 11.1143 19.4336 10.8221L18.3753 9.7591ZM18.3731 9.75487L10.516 17.6427L11.5787 18.7013L19.4359 10.8135L18.3731 9.75487ZM11.5787 17.6427L3.72158 9.75487L2.65886 10.8135L10.516 18.7013L11.5787 17.6427ZM3.71685 9.75026C2.5043 8.55425 2.05436 6.76553 2.55837 5.12247L1.12432 4.68257C0.457612 6.85602 1.05019 9.22687 2.66349 10.8182L3.71685 9.75026ZM2.55837 5.12247C3.06209 3.48035 4.43005 2.27097 6.09068 1.98401L5.83526 0.50592C3.609 0.890612 1.79131 2.50819 1.12432 4.68257L2.55837 5.12247ZM6.09068 1.98401C7.75064 1.69718 9.43296 2.37843 10.4425 3.75524L11.6521 2.86827C10.3096 1.0373 8.0622 0.121112 5.83526 0.50592L6.09068 1.98401ZM11.6497 3.75858C12.6634 2.39202 14.3421 1.71982 15.996 2.00934L16.2547 0.53181C14.0358 0.143407 11.7931 1.04744 10.445 2.86492L11.6497 3.75858ZM15.996 2.00934C17.6506 2.29898 19.013 3.50456 19.5171 5.14068L20.9506 4.69901C20.2831 2.53255 18.4728 0.920097 16.2547 0.53181L15.996 2.00934ZM19.5171 5.14068C20.0215 6.77773 19.5784 8.56124 18.3753 9.7591L19.4336 10.8221C21.0343 9.22842 21.6178 6.86455 20.9506 4.69901L19.5171 5.14068Z" fill="#696C87"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="shop__card-weight-margin favorite">
+                    <div class="favorite__card-weight ">
+                      <span class="favorite__weight ">100г.</span>
+                    </div>
+                    </div>
+                  </div>
+                  <h4 class="favorite__card-title ">Трикотажна сукня</h4>
+                  <div class="favorite__card-buy ">
+                    <p class="favorite__card-price ">
+                      <span class="favorite__card-real-price ">1200 000 ₴</span> 
+                      850 000 ₴
+                    </p>
+                    <button class="favorite__card-btn ">Купити</button>
+                  </div>
+                </div>
+                <!-- Favorite card -->
+
+                <!-- Favorite card -->
+                <div class="favorite__card">
+                  <div class="favorite__card-product favorite__card-long">
+                    <div class="favorite__card-product-info">
+                      <div class="favorite__card-discount ">
+                        <span class="favorite__card-percent ">-15%</span>
+                      </div>
+                      <button class="favorite__card-like ">
+                        <svg class="favorite__card-svg -svg" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.4359 10.8135C19.7282 10.52 19.7273 10.0451 19.4338 9.7528C19.1403 9.46048 18.6655 9.46141 18.3731 9.75487L19.4359 10.8135ZM11.0474 18.172L10.516 18.7013C10.6567 18.8426 10.8479 18.922 11.0474 18.922C11.2468 18.922 11.438 18.8426 11.5787 18.7013L11.0474 18.172ZM3.72158 9.75487C3.42926 9.46141 2.95439 9.46048 2.66093 9.7528C2.36746 10.0451 2.36654 10.52 2.65886 10.8135L3.72158 9.75487ZM2.66349 10.8182C2.95839 11.1091 3.43325 11.1058 3.72413 10.8109C4.01501 10.516 4.01175 10.0411 3.71685 9.75026L2.66349 10.8182ZM11.0473 3.31175L10.4425 3.75524C10.5833 3.94733 10.807 4.06109 11.0452 4.06175C11.2834 4.06241 11.5078 3.94989 11.6497 3.75858L11.0473 3.31175ZM18.3753 9.7591C18.0818 10.0513 18.0807 10.5262 18.373 10.8198C18.6652 11.1133 19.1401 11.1143 19.4336 10.8221L18.3753 9.7591ZM18.3731 9.75487L10.516 17.6427L11.5787 18.7013L19.4359 10.8135L18.3731 9.75487ZM11.5787 17.6427L3.72158 9.75487L2.65886 10.8135L10.516 18.7013L11.5787 17.6427ZM3.71685 9.75026C2.5043 8.55425 2.05436 6.76553 2.55837 5.12247L1.12432 4.68257C0.457612 6.85602 1.05019 9.22687 2.66349 10.8182L3.71685 9.75026ZM2.55837 5.12247C3.06209 3.48035 4.43005 2.27097 6.09068 1.98401L5.83526 0.50592C3.609 0.890612 1.79131 2.50819 1.12432 4.68257L2.55837 5.12247ZM6.09068 1.98401C7.75064 1.69718 9.43296 2.37843 10.4425 3.75524L11.6521 2.86827C10.3096 1.0373 8.0622 0.121112 5.83526 0.50592L6.09068 1.98401ZM11.6497 3.75858C12.6634 2.39202 14.3421 1.71982 15.996 2.00934L16.2547 0.53181C14.0358 0.143407 11.7931 1.04744 10.445 2.86492L11.6497 3.75858ZM15.996 2.00934C17.6506 2.29898 19.013 3.50456 19.5171 5.14068L20.9506 4.69901C20.2831 2.53255 18.4728 0.920097 16.2547 0.53181L15.996 2.00934ZM19.5171 5.14068C20.0215 6.77773 19.5784 8.56124 18.3753 9.7591L19.4336 10.8221C21.0343 9.22842 21.6178 6.86455 20.9506 4.69901L19.5171 5.14068Z" fill="#696C87"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="shop__card-weight-margin favorite">
+                    <div class="favorite__card-weight ">
+                      <span class="favorite__weight ">100г.</span>
+                    </div>
+                    </div>
+                  </div>
+                  <h4 class="favorite__card-title ">Трикотажна сукня</h4>
+                  <div class="favorite__card-buy ">
+                    <p class="favorite__card-price ">
+                      <span class="favorite__card-real-price ">1200 000 ₴</span> 
+                      850 000 ₴
+                    </p>
+                    <button class="favorite__card-btn ">Купити</button>
+                  </div>
+                </div>
+                <!-- Favorite card -->
+
+                <!-- Favorite card -->
+                <div class="favorite__card">
+                  <div class="favorite__card-product favorite__card-long">
+                    <div class="favorite__card-product-info">
+                      <div class="favorite__card-discount ">
+                        <span class="favorite__card-percent ">-15%</span>
+                      </div>
+                      <button class="favorite__card-like ">
+                        <svg class="favorite__card-svg -svg" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.4359 10.8135C19.7282 10.52 19.7273 10.0451 19.4338 9.7528C19.1403 9.46048 18.6655 9.46141 18.3731 9.75487L19.4359 10.8135ZM11.0474 18.172L10.516 18.7013C10.6567 18.8426 10.8479 18.922 11.0474 18.922C11.2468 18.922 11.438 18.8426 11.5787 18.7013L11.0474 18.172ZM3.72158 9.75487C3.42926 9.46141 2.95439 9.46048 2.66093 9.7528C2.36746 10.0451 2.36654 10.52 2.65886 10.8135L3.72158 9.75487ZM2.66349 10.8182C2.95839 11.1091 3.43325 11.1058 3.72413 10.8109C4.01501 10.516 4.01175 10.0411 3.71685 9.75026L2.66349 10.8182ZM11.0473 3.31175L10.4425 3.75524C10.5833 3.94733 10.807 4.06109 11.0452 4.06175C11.2834 4.06241 11.5078 3.94989 11.6497 3.75858L11.0473 3.31175ZM18.3753 9.7591C18.0818 10.0513 18.0807 10.5262 18.373 10.8198C18.6652 11.1133 19.1401 11.1143 19.4336 10.8221L18.3753 9.7591ZM18.3731 9.75487L10.516 17.6427L11.5787 18.7013L19.4359 10.8135L18.3731 9.75487ZM11.5787 17.6427L3.72158 9.75487L2.65886 10.8135L10.516 18.7013L11.5787 17.6427ZM3.71685 9.75026C2.5043 8.55425 2.05436 6.76553 2.55837 5.12247L1.12432 4.68257C0.457612 6.85602 1.05019 9.22687 2.66349 10.8182L3.71685 9.75026ZM2.55837 5.12247C3.06209 3.48035 4.43005 2.27097 6.09068 1.98401L5.83526 0.50592C3.609 0.890612 1.79131 2.50819 1.12432 4.68257L2.55837 5.12247ZM6.09068 1.98401C7.75064 1.69718 9.43296 2.37843 10.4425 3.75524L11.6521 2.86827C10.3096 1.0373 8.0622 0.121112 5.83526 0.50592L6.09068 1.98401ZM11.6497 3.75858C12.6634 2.39202 14.3421 1.71982 15.996 2.00934L16.2547 0.53181C14.0358 0.143407 11.7931 1.04744 10.445 2.86492L11.6497 3.75858ZM15.996 2.00934C17.6506 2.29898 19.013 3.50456 19.5171 5.14068L20.9506 4.69901C20.2831 2.53255 18.4728 0.920097 16.2547 0.53181L15.996 2.00934ZM19.5171 5.14068C20.0215 6.77773 19.5784 8.56124 18.3753 9.7591L19.4336 10.8221C21.0343 9.22842 21.6178 6.86455 20.9506 4.69901L19.5171 5.14068Z" fill="#696C87"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="shop__card-weight-margin favorite">
+                    <div class="favorite__card-weight ">
+                      <span class="favorite__weight ">100г.</span>
+                    </div>
+                    </div>
+                  </div>
+                  <h4 class="favorite__card-title ">Трикотажна сукня</h4>
+                  <div class="favorite__card-buy ">
+                    <p class="favorite__card-price ">
+                      <span class="favorite__card-real-price ">1200 000 ₴</span> 
+                      850 000 ₴
+                    </p>
+                    <button class="favorite__card-btn ">Купити</button>
+                  </div>
+                </div>
+                <!-- Favorite card -->
+              </div>
+              <!-- Favorite cards -->
+
+              <!-- Favorite cards-->
+              <div class="favorite__cards">
+                <!-- Favorite card -->
+                <div class="favorite__card">
+                  <div class="favorite__card-product">
+                    <div class="favorite__card-product-info">
+                      <div class="favorite__card-discount ">
+                        <span class="favorite__card-percent ">-15%</span>
+                      </div>
+                      <button class="favorite__card-like ">
+                        <svg class="favorite__card-svg -svg" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.4359 10.8135C19.7282 10.52 19.7273 10.0451 19.4338 9.7528C19.1403 9.46048 18.6655 9.46141 18.3731 9.75487L19.4359 10.8135ZM11.0474 18.172L10.516 18.7013C10.6567 18.8426 10.8479 18.922 11.0474 18.922C11.2468 18.922 11.438 18.8426 11.5787 18.7013L11.0474 18.172ZM3.72158 9.75487C3.42926 9.46141 2.95439 9.46048 2.66093 9.7528C2.36746 10.0451 2.36654 10.52 2.65886 10.8135L3.72158 9.75487ZM2.66349 10.8182C2.95839 11.1091 3.43325 11.1058 3.72413 10.8109C4.01501 10.516 4.01175 10.0411 3.71685 9.75026L2.66349 10.8182ZM11.0473 3.31175L10.4425 3.75524C10.5833 3.94733 10.807 4.06109 11.0452 4.06175C11.2834 4.06241 11.5078 3.94989 11.6497 3.75858L11.0473 3.31175ZM18.3753 9.7591C18.0818 10.0513 18.0807 10.5262 18.373 10.8198C18.6652 11.1133 19.1401 11.1143 19.4336 10.8221L18.3753 9.7591ZM18.3731 9.75487L10.516 17.6427L11.5787 18.7013L19.4359 10.8135L18.3731 9.75487ZM11.5787 17.6427L3.72158 9.75487L2.65886 10.8135L10.516 18.7013L11.5787 17.6427ZM3.71685 9.75026C2.5043 8.55425 2.05436 6.76553 2.55837 5.12247L1.12432 4.68257C0.457612 6.85602 1.05019 9.22687 2.66349 10.8182L3.71685 9.75026ZM2.55837 5.12247C3.06209 3.48035 4.43005 2.27097 6.09068 1.98401L5.83526 0.50592C3.609 0.890612 1.79131 2.50819 1.12432 4.68257L2.55837 5.12247ZM6.09068 1.98401C7.75064 1.69718 9.43296 2.37843 10.4425 3.75524L11.6521 2.86827C10.3096 1.0373 8.0622 0.121112 5.83526 0.50592L6.09068 1.98401ZM11.6497 3.75858C12.6634 2.39202 14.3421 1.71982 15.996 2.00934L16.2547 0.53181C14.0358 0.143407 11.7931 1.04744 10.445 2.86492L11.6497 3.75858ZM15.996 2.00934C17.6506 2.29898 19.013 3.50456 19.5171 5.14068L20.9506 4.69901C20.2831 2.53255 18.4728 0.920097 16.2547 0.53181L15.996 2.00934ZM19.5171 5.14068C20.0215 6.77773 19.5784 8.56124 18.3753 9.7591L19.4336 10.8221C21.0343 9.22842 21.6178 6.86455 20.9506 4.69901L19.5171 5.14068Z" fill="#696C87"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="shop__card-weight-margin favorite">
+                    <div class="favorite__card-weight ">
+                      <span class="favorite__weight ">100г.</span>
+                    </div>
+                    </div>
+                  </div>
+                  <h4 class="favorite__card-title ">Норвезький вершковий суп</h4>
+                  <div class="favorite__card-buy ">
+                    <p class="favorite__card-price ">
+                      <span class="favorite__card-real-price ">220 000 ₴</span> 
+                      190 000 ₴
+                    </p>
+                    <button class="favorite__card-btn ">Купити</button>
+                  </div>
+                </div>
+                <!-- Favorite card -->
+
+                <!-- Favorite card -->
+                <div class="favorite__card">
+                  <div class="favorite__card-product">
+                    <div class="favorite__card-product-info">
+                      <div class="favorite__card-discount ">
+                        <span class="favorite__card-percent ">-15%</span>
+                      </div>
+                      <button class="favorite__card-like ">
+                        <svg class="favorite__card-svg -svg" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.4359 10.8135C19.7282 10.52 19.7273 10.0451 19.4338 9.7528C19.1403 9.46048 18.6655 9.46141 18.3731 9.75487L19.4359 10.8135ZM11.0474 18.172L10.516 18.7013C10.6567 18.8426 10.8479 18.922 11.0474 18.922C11.2468 18.922 11.438 18.8426 11.5787 18.7013L11.0474 18.172ZM3.72158 9.75487C3.42926 9.46141 2.95439 9.46048 2.66093 9.7528C2.36746 10.0451 2.36654 10.52 2.65886 10.8135L3.72158 9.75487ZM2.66349 10.8182C2.95839 11.1091 3.43325 11.1058 3.72413 10.8109C4.01501 10.516 4.01175 10.0411 3.71685 9.75026L2.66349 10.8182ZM11.0473 3.31175L10.4425 3.75524C10.5833 3.94733 10.807 4.06109 11.0452 4.06175C11.2834 4.06241 11.5078 3.94989 11.6497 3.75858L11.0473 3.31175ZM18.3753 9.7591C18.0818 10.0513 18.0807 10.5262 18.373 10.8198C18.6652 11.1133 19.1401 11.1143 19.4336 10.8221L18.3753 9.7591ZM18.3731 9.75487L10.516 17.6427L11.5787 18.7013L19.4359 10.8135L18.3731 9.75487ZM11.5787 17.6427L3.72158 9.75487L2.65886 10.8135L10.516 18.7013L11.5787 17.6427ZM3.71685 9.75026C2.5043 8.55425 2.05436 6.76553 2.55837 5.12247L1.12432 4.68257C0.457612 6.85602 1.05019 9.22687 2.66349 10.8182L3.71685 9.75026ZM2.55837 5.12247C3.06209 3.48035 4.43005 2.27097 6.09068 1.98401L5.83526 0.50592C3.609 0.890612 1.79131 2.50819 1.12432 4.68257L2.55837 5.12247ZM6.09068 1.98401C7.75064 1.69718 9.43296 2.37843 10.4425 3.75524L11.6521 2.86827C10.3096 1.0373 8.0622 0.121112 5.83526 0.50592L6.09068 1.98401ZM11.6497 3.75858C12.6634 2.39202 14.3421 1.71982 15.996 2.00934L16.2547 0.53181C14.0358 0.143407 11.7931 1.04744 10.445 2.86492L11.6497 3.75858ZM15.996 2.00934C17.6506 2.29898 19.013 3.50456 19.5171 5.14068L20.9506 4.69901C20.2831 2.53255 18.4728 0.920097 16.2547 0.53181L15.996 2.00934ZM19.5171 5.14068C20.0215 6.77773 19.5784 8.56124 18.3753 9.7591L19.4336 10.8221C21.0343 9.22842 21.6178 6.86455 20.9506 4.69901L19.5171 5.14068Z" fill="#696C87"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="shop__card-weight-margin favorite">
+                    <div class="favorite__card-weight ">
+                      <span class="favorite__weight ">100г.</span>
+                    </div>
+                    </div>
+                  </div>
+                  <h4 class="favorite__card-title ">Норвезький вершковий суп</h4>
+                  <div class="favorite__card-buy ">
+                    <p class="favorite__card-price ">
+                      <span class="favorite__card-real-price ">220 000 ₴</span> 
+                      190 000 ₴
+                    </p>
+                    <button class="favorite__card-btn ">Купити</button>
+                  </div>
+                </div>
+                <!-- Favorite card -->
+
+                <!-- Favorite card -->
+                <div class="favorite__card">
+                  <div class="favorite__card-product">
+                    <div class="favorite__card-product-info">
+                      <div class="favorite__card-discount ">
+                        <span class="favorite__card-percent ">-15%</span>
+                      </div>
+                      <button class="favorite__card-like ">
+                        <svg class="favorite__card-svg -svg" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.4359 10.8135C19.7282 10.52 19.7273 10.0451 19.4338 9.7528C19.1403 9.46048 18.6655 9.46141 18.3731 9.75487L19.4359 10.8135ZM11.0474 18.172L10.516 18.7013C10.6567 18.8426 10.8479 18.922 11.0474 18.922C11.2468 18.922 11.438 18.8426 11.5787 18.7013L11.0474 18.172ZM3.72158 9.75487C3.42926 9.46141 2.95439 9.46048 2.66093 9.7528C2.36746 10.0451 2.36654 10.52 2.65886 10.8135L3.72158 9.75487ZM2.66349 10.8182C2.95839 11.1091 3.43325 11.1058 3.72413 10.8109C4.01501 10.516 4.01175 10.0411 3.71685 9.75026L2.66349 10.8182ZM11.0473 3.31175L10.4425 3.75524C10.5833 3.94733 10.807 4.06109 11.0452 4.06175C11.2834 4.06241 11.5078 3.94989 11.6497 3.75858L11.0473 3.31175ZM18.3753 9.7591C18.0818 10.0513 18.0807 10.5262 18.373 10.8198C18.6652 11.1133 19.1401 11.1143 19.4336 10.8221L18.3753 9.7591ZM18.3731 9.75487L10.516 17.6427L11.5787 18.7013L19.4359 10.8135L18.3731 9.75487ZM11.5787 17.6427L3.72158 9.75487L2.65886 10.8135L10.516 18.7013L11.5787 17.6427ZM3.71685 9.75026C2.5043 8.55425 2.05436 6.76553 2.55837 5.12247L1.12432 4.68257C0.457612 6.85602 1.05019 9.22687 2.66349 10.8182L3.71685 9.75026ZM2.55837 5.12247C3.06209 3.48035 4.43005 2.27097 6.09068 1.98401L5.83526 0.50592C3.609 0.890612 1.79131 2.50819 1.12432 4.68257L2.55837 5.12247ZM6.09068 1.98401C7.75064 1.69718 9.43296 2.37843 10.4425 3.75524L11.6521 2.86827C10.3096 1.0373 8.0622 0.121112 5.83526 0.50592L6.09068 1.98401ZM11.6497 3.75858C12.6634 2.39202 14.3421 1.71982 15.996 2.00934L16.2547 0.53181C14.0358 0.143407 11.7931 1.04744 10.445 2.86492L11.6497 3.75858ZM15.996 2.00934C17.6506 2.29898 19.013 3.50456 19.5171 5.14068L20.9506 4.69901C20.2831 2.53255 18.4728 0.920097 16.2547 0.53181L15.996 2.00934ZM19.5171 5.14068C20.0215 6.77773 19.5784 8.56124 18.3753 9.7591L19.4336 10.8221C21.0343 9.22842 21.6178 6.86455 20.9506 4.69901L19.5171 5.14068Z" fill="#696C87"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="shop__card-weight-margin favorite">
+                    <div class="favorite__card-weight ">
+                      <span class="favorite__weight ">100г.</span>
+                    </div>
+                    </div>
+                  </div>
+                  <h4 class="favorite__card-title ">Норвезький вершковий суп</h4>
+                  <div class="favorite__card-buy ">
+                    <p class="favorite__card-price ">
+                      <span class="favorite__card-real-price ">220 000 ₴</span> 
+                      190 000 ₴
+                    </p>
+                    <button class="favorite__card-btn ">Купити</button>
+                  </div>
+                </div>
+                <!-- Favorite card -->
+
+                <!-- Favorite card -->
+                <div class="favorite__card">
+                  <div class="favorite__card-product">
+                    <div class="favorite__card-product-info">
+                      <div class="favorite__card-discount ">
+                        <span class="favorite__card-percent ">-15%</span>
+                      </div>
+                      <button class="favorite__card-like ">
+                        <svg class="favorite__card-svg -svg" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.4359 10.8135C19.7282 10.52 19.7273 10.0451 19.4338 9.7528C19.1403 9.46048 18.6655 9.46141 18.3731 9.75487L19.4359 10.8135ZM11.0474 18.172L10.516 18.7013C10.6567 18.8426 10.8479 18.922 11.0474 18.922C11.2468 18.922 11.438 18.8426 11.5787 18.7013L11.0474 18.172ZM3.72158 9.75487C3.42926 9.46141 2.95439 9.46048 2.66093 9.7528C2.36746 10.0451 2.36654 10.52 2.65886 10.8135L3.72158 9.75487ZM2.66349 10.8182C2.95839 11.1091 3.43325 11.1058 3.72413 10.8109C4.01501 10.516 4.01175 10.0411 3.71685 9.75026L2.66349 10.8182ZM11.0473 3.31175L10.4425 3.75524C10.5833 3.94733 10.807 4.06109 11.0452 4.06175C11.2834 4.06241 11.5078 3.94989 11.6497 3.75858L11.0473 3.31175ZM18.3753 9.7591C18.0818 10.0513 18.0807 10.5262 18.373 10.8198C18.6652 11.1133 19.1401 11.1143 19.4336 10.8221L18.3753 9.7591ZM18.3731 9.75487L10.516 17.6427L11.5787 18.7013L19.4359 10.8135L18.3731 9.75487ZM11.5787 17.6427L3.72158 9.75487L2.65886 10.8135L10.516 18.7013L11.5787 17.6427ZM3.71685 9.75026C2.5043 8.55425 2.05436 6.76553 2.55837 5.12247L1.12432 4.68257C0.457612 6.85602 1.05019 9.22687 2.66349 10.8182L3.71685 9.75026ZM2.55837 5.12247C3.06209 3.48035 4.43005 2.27097 6.09068 1.98401L5.83526 0.50592C3.609 0.890612 1.79131 2.50819 1.12432 4.68257L2.55837 5.12247ZM6.09068 1.98401C7.75064 1.69718 9.43296 2.37843 10.4425 3.75524L11.6521 2.86827C10.3096 1.0373 8.0622 0.121112 5.83526 0.50592L6.09068 1.98401ZM11.6497 3.75858C12.6634 2.39202 14.3421 1.71982 15.996 2.00934L16.2547 0.53181C14.0358 0.143407 11.7931 1.04744 10.445 2.86492L11.6497 3.75858ZM15.996 2.00934C17.6506 2.29898 19.013 3.50456 19.5171 5.14068L20.9506 4.69901C20.2831 2.53255 18.4728 0.920097 16.2547 0.53181L15.996 2.00934ZM19.5171 5.14068C20.0215 6.77773 19.5784 8.56124 18.3753 9.7591L19.4336 10.8221C21.0343 9.22842 21.6178 6.86455 20.9506 4.69901L19.5171 5.14068Z" fill="#696C87"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="shop__card-weight-margin favorite">
+                    <div class="favorite__card-weight ">
+                      <span class="favorite__weight ">100г.</span>
+                    </div>
+                    </div>
+                  </div>
+                  <h4 class="favorite__card-title ">Норвезький вершковий суп</h4>
+                  <div class="favorite__card-buy ">
+                    <p class="favorite__card-price ">
+                      <span class="favorite__card-real-price ">220 000 ₴</span> 
+                      190 000 ₴
+                    </p>
+                    <button class="favorite__card-btn ">Купити</button>
+                  </div>
+                </div>
+                <!-- Favorite card -->
+              </div>
+              <!-- Favorite cards -->
+            </div>
+            <!-- Favorite cards body -->
+        </div>
+      </div>
+      </div>
+    </div>  
+  </main>
+
+  
+<!-- Блок сообщения поверх екрана -->
+<div class="modal-location">
+  <div class="modal-location__container">
+    <div class="modal-location__header">
+      <div class="modal-location__title">Оберіть локацію</div>
+      <button class="modal-location__close">
+        <img src="../../images/card-detale/madal-close.svg" alt="close" class="madal__img">
+      </button>
+    </div>
+    <div class="modal-location__body">
+      <select class="modal-location__city">
+        <option value="Kr">Кривий Ріг</option>
+        <option value="Kv">Київ</option>
+        <option value="Xr">Харьків</option>
+        <option value="Lv">Львів</option>
+        <option value="Ods">Одесса</option>
+      </select>
+      <div class="modal-location__box">
+        <img src="../../images/modal-logo.svg" alt="" class="modal-location__img">
+        <div class="modal-location__info">
+          <div class="modal-location__info-content">
+            <div class="modal-location__info-box">
+              <img src="../../images/map-modal.svg" alt="">
+              <div class="box">
+                <p class="modal-location__info-text">
+                  вул. Комерційна, Кривий Ріг,
+                </p>
+                <p class="modal-location__info-text"> 
+                  вул. Комерційна, Кривий Ріг,
+                </p>
+              </div>
+            </div>
+            <div class="modal-location__info-box">
+              <img src="../../images/clock-modal.svg" alt="">
+              <p class="modal-location__info-time">Пн-Вс: 08:00-19:00</p>
+            </div>
+            <div class="modal-location__info-box">
+              <img src="../../images/clock-modal.svg" alt="">
+              <p class="modal-location__info-time">Пн-Вс: 08:00-19:00</p>
+            </div>
+          </div>
+          <a href="tel:380977252525" class="modal-location__num">+380977252525</a>
+        </div>
+        
+      </div>
+      <div class="modal-location__box">
+        <img src="../../images/modal-logo.svg" alt="" class="modal-location__img">
+        <div class="modal-location__info">
+          <div class="modal-location__info-content">
+            <div class="modal-location__info-box">
+              <img src="../../images/map-modal.svg" alt="">
+              <div class="box">
+                <p class="modal-location__info-text">
+                  вул. Комерційна, Кривий Ріг,
+                </p>
+                <p class="modal-location__info-text"> 
+                  вул. Комерційна, Кривий Ріг,
+                </p>
+              </div>
+            </div>
+            <div class="modal-location__info-box">
+              <img src="../../images/clock-modal.svg" alt="">
+              <p class="modal-location__info-time">Пн-Вс: 08:00-19:00</p>
+            </div>
+            <div class="modal-location__info-box">
+              <img src="../../images/clock-modal.svg" alt="">
+              <p class="modal-location__info-time">Пн-Вс: 08:00-19:00</p>
+            </div>
+          </div>
+          <a href="tel:380977252525" class="modal-location__num">+380977252525</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Блок сообщения поверх екрана -->
+
+  <script  src="../../js/main.min.js"></script>
+  <script src="../../js/Components/modal-location.js"></script>
+  <!-- <script src="../../js/Components"></script> -->
+
+</body>
+
+</html>
+
+
+

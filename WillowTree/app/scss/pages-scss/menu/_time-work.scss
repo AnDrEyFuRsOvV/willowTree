@@ -1,0 +1,24 @@
+// Час роботи секція 
+.time-work{
+    &__inner{
+        border-bottom: 1px solid #F1F1F1;
+        padding-bottom: 22px;
+        display: flex;
+        align-items: center;
+        width: 830px;
+        margin-left: 30px;
+    }
+    &__text{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 16px;
+        line-height: 22px;
+        color: #3D405B;
+        margin-left: 17px;
+    }
+}
+// Час роботи секція кінець
+
+
+.time-work-page__box-title{
+    display: none;
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" login-page="width=device-width, initial-scale=1.0">
+  <title>Willow Tree</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.min.css">
+</head>
+
+<body>
+
+  
+
+
+  <!-- My adres  -->
+  <main class="main">
+
+    <!-- Меню топбар -->
+    <header class="header">
+      
+      
+      <!-- Меню топбар -->
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a href="/" class="header__logo-link">
+              <picture>
+                <source srcset="images/logo-smal.svg"
+                media="(max-width: 490px)">
+                <img src="../../images/logo.svg" alt="logo">
+              </picture>
+            </a>
+          </div>
+          <div class="header__location">
+            <button class="header__location-btn">
+              Змінити локацію
+            </button>
+          </div>
+          <div class="header__search">
+            <input class="header__search-input" name="search" type="text" placeholder="Пошук ...">
+            <button class="header__search-btn"><img src="../../images/search.svg" alt=""></button>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a href="tel:380975787801" class="header__menu-link">
+                  +38 (097)-578-78-01
+                </a>
+              </li>
+              <li class="header__menu-list-like">
+                <a href="/pages/menu/favorite.html" class="header__menu-like">
+                  <img src="../../images/like.svg" alt="header-like">
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/pages/basket.html" class="header__menu-basket">
+                  <img src="../../images/basket.svg" alt="header-basket">
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/pages/menu/login.html" class="header__menu-btn">
+                  <img src="../../images/menu.svg" alt="header-btn">
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Меню топбар кінець -->
+
+    <div class="login-page">
+      <div class="wrapper-branch">
+        <div class="container">
+          <div class="login-page__inner">
+
+            <!-- side bar  -->
+            <div class="sidebar not-visible">
+              <div class="sidebar__login no">
+                <div class="sidebar__login-img">
+                  <img class="sidebar__login-svg" src="../../images/user.svg" alt="">
+                </div>
+                <p class="sidebar__login-text">Авторизуйтесь для перегляду профілю</p>
+                <a href="/pages/menu/login.html" class="sidebar__login-btn">Увійти</a>
+              </div>
+
+              <!-- <div class="login-page__login-true">
+                <div class="login-page__login-img on">
+                    <img class="login-page__login-svg" src="../../images/user.svg" alt="">
+                  </div>
+                  <div class="login-page__on">
+                    <h5 class="login-page__title">
+                        Юрій Поваров
+                    </h5>
+                    <p class="login-page__num">
+                        +380979999999
+                    </p>
+                    <p class="login-page__date">
+                        27.03.1984
+                    </p>
+                    <p class="login-page__gifts">
+                        Бонуси: 350
+                    </p>
+                  </div>
+                  <div class="login-page-edit">
+                    <button class="edit__info"><img src="../../images/pencil.svg" alt="edit"></button>
+                  </div>
+              </div> -->
+
+              <ul class="sidebar__menu">
+                <li class="sidebar__item-li">
+                  <a href="/pages/menu/orders.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/clipboard-list.svg" alt="svg">
+                    <p class="sidebar__text">Мої замовлення</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li">
+                  <a href="/pages/menu/favorite.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/heart.svg" alt="svg">
+                    <p class="sidebar__text">Обране</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li">
+                  <a href="/pages/menu/my-adres.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/map-pin.svg" alt="svg">
+                    <p class="sidebar__text">Мої адреси</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li profile">
+                  <a href="/pages/menu/notification.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/bell-ringing.svg" alt="svg">
+                    <p class="sidebar__text">Повідомлення</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li notification">
+                  <a href="https://qrboss.com.ua/R0vZ" class="sidebar__item notification">
+                    <img class="sidebar__img" src="../../images/sidebar/message-dots.svg" alt="svg">
+                    <p class="sidebar__text notification">Залишити відгук</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li">
+                  <a href="#" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/car.svg" alt="svg">
+                    <p class="sidebar__text">Доставка і вартість</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li">
+                  <a href="#" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/map-pin.svg" alt="svg">
+                    <p class="sidebar__text">Адреса</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li delivery">
+                  <a href="/pages/menu/time-work.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/clock.svg" alt="svg">
+                    <p class="sidebar__text">Час роботи</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li">
+                  <a href="/pages/menu/loyalty.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/gift.svg" alt="svg">
+                    <p class="sidebar__text">Програма лояльності</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li">
+                  <a href="/pages/menu/language.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/language.svg" alt="svg">
+                    <p class="sidebar__text">Мова</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li">
+                  <a href="/pages/menu/about-qr.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/book-2.svg" alt="svg">
+                    <p class="sidebar__text">Про розробника</p>
+                  </a>
+                </li>
+                <li class="sidebar__item-li">
+                  <a href="/pages/menu/login.html" class="sidebar__item">
+                    <img class="sidebar__img " src="../../images/sidebar/logout.svg" alt="svg">
+                    <p class="sidebar__text">Вихід</p>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+            <!-- side bar  -->
+
+            <div class="notification-page__box-title">
+              <a href="/pages/menu/sidebar.html">
+                <img src="../../images/arrow-sdebar.svg" alt="">
+              </a>
+              <p class="notification-page__box-title-text">Повідомлення</p>
+            </div>
+
+            <!-- Orders login on but not have order -->
+            <div class="notification-true">
+              <div class="notification-true__sms">
+                <div class="notification-true__date">31.05.2021</div>
+                <img class="notification-true__img" src="../../images/notification.jpg" alt="">
+                <div class="notification-true__content">
+                  <div class="notification-true__title">Freedom of speech cannot be stifled, even if winter is near</div>
+                  <div class="notification-true__text">First of all, long-term planning makes it possible to assess the importance of new principles for the formation of the material, technical and personnel base.</div> 
+                </div>
+              </div>
+              <div class="notification-true__sms">
+                <div class="notification-true__date">31.05.2021</div>
+                <div class="notification-true__content">
+                  <div class="notification-true__title">Freedom of speech cannot be stifled, even if winter is near</div>
+                  <div class="notification-true__text">First of all, long-term planning makes it possible to assess the importance of new principles for the formation of the material, technical and personnel base.</div> 
+                </div>
+              </div>
+            </div>
+            <!-- Orders login on but not have order -->
+
+          </div>
+      </div>
+      </div>
+    </div>  
+  </main>
+  <!-- Orders on end -->
+  
+
+<!-- Блок сообщения поверх екрана -->
+<div class="modal-location">
+  <div class="modal-location__container">
+    <div class="modal-location__header">
+      <div class="modal-location__title">Оберіть локацію</div>
+      <button class="modal-location__close">
+        <img src="../../images/card-detale/madal-close.svg" alt="close" class="madal__img">
+      </button>
+    </div>
+    <div class="modal-location__body">
+      <select class="modal-location__city">
+        <option value="Kr">Кривий Ріг</option>
+        <option value="Kv">Київ</option>
+        <option value="Xr">Харьків</option>
+        <option value="Lv">Львів</option>
+        <option value="Ods">Одесса</option>
+      </select>
+      <div class="modal-location__box">
+        <img src="../../images/modal-logo.svg" alt="" class="modal-location__img">
+        <div class="modal-location__info">
+          <div class="modal-location__info-content">
+            <div class="modal-location__info-box">
+              <img src="../../images/map-modal.svg" alt="">
+              <div class="box">
+                <p class="modal-location__info-text">
+                  вул. Комерційна, Кривий Ріг,
+                </p>
+                <p class="modal-location__info-text"> 
+                  вул. Комерційна, Кривий Ріг,
+                </p>
+              </div>
+            </div>
+            <div class="modal-location__info-box">
+              <img src="../../images/clock-modal.svg" alt="">
+              <p class="modal-location__info-time">Пн-Вс: 08:00-19:00</p>
+            </div>
+            <div class="modal-location__info-box">
+              <img src="../../images/clock-modal.svg" alt="">
+              <p class="modal-location__info-time">Пн-Вс: 08:00-19:00</p>
+            </div>
+          </div>
+          <a href="tel:380977252525" class="modal-location__num">+380977252525</a>
+        </div>
+        
+      </div>
+      <div class="modal-location__box">
+        <img src="../../images/modal-logo.svg" alt="" class="modal-location__img">
+        <div class="modal-location__info">
+          <div class="modal-location__info-content">
+            <div class="modal-location__info-box">
+              <img src="../../images/map-modal.svg" alt="">
+              <div class="box">
+                <p class="modal-location__info-text">
+                  вул. Комерційна, Кривий Ріг,
+                </p>
+                <p class="modal-location__info-text"> 
+                  вул. Комерційна, Кривий Ріг,
+                </p>
+              </div>
+            </div>
+            <div class="modal-location__info-box">
+              <img src="../../images/clock-modal.svg" alt="">
+              <p class="modal-location__info-time">Пн-Вс: 08:00-19:00</p>
+            </div>
+            <div class="modal-location__info-box">
+              <img src="../../images/clock-modal.svg" alt="">
+              <p class="modal-location__info-time">Пн-Вс: 08:00-19:00</p>
+            </div>
+          </div>
+          <a href="tel:380977252525" class="modal-location__num">+380977252525</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Блок сообщения поверх екрана -->
+
+  <script src="../../js/main.min.js"></script>
+  <script src="../../js/Components/modal-location.js"></script>
+  <!-- <script src="../../js/Components"></script> -->
+</body>
+
+</html>
+

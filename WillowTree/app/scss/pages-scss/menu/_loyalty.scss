@@ -1,0 +1,24 @@
+// програма лояльності секція
+.loyalty{
+    margin-left: 30px;
+    &__title {
+        @extend %font_u_700; // Смотреть файл _vars.scss
+        font-size: 16px;
+        line-height: 135%;
+        color: #3D405B;
+        margin-bottom: 12px;
+    }
+    &__text {
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 14px;
+        line-height: 135%;
+        color: #3D405B;
+        margin-bottom: 12px;
+    }
+}
+// програма лояльності секція кінець
+
+
+.loyalty-page__box-title{
+    display: none;
+}

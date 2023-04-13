@@ -1,0 +1,323 @@
+@import '../../vars';
+@import '../../fonts';
+@import '../../reset';
+@import '../../libs';
+@import '../../global';
+@import "../../media";
+
+
+.orders__orders{
+    &-text{
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+    &-title{
+        @extend %font_u_700; // Смотреть файл _vars.scss
+        font-size: 18px;
+        line-height: 27px;
+        color: #3D405B;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    &-descr{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 16px;
+        line-height: 22px;
+        color: #3D405B;
+        margin-bottom: 20px;
+        &.log{
+            @extend %font_u_400; // Смотреть файл _vars.scss
+            font-size: 16px;
+            line-height: 22px;
+            color: #3D405B;
+            margin-bottom: 34px;
+            margin-right: 10px;
+        }
+    }
+    &-btn{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        padding: 10px 62px;
+        background-color: #494C69;
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+}
+
+.orders{
+    &__box{
+        @extend %d-f; // Смотреть файл _vars.scss
+        align-items: center;
+        flex-direction: column;
+        margin-top: 115px;
+        margin-left: 300px;
+    }
+    &__text{
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+    &__title{
+        @extend %font_u_700; // Смотреть файл _vars.scss
+        font-size: 18px;
+        line-height: 27px;
+        color: #3D405B;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    &__descr{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 16px;
+        line-height: 22px;
+        color: #3D405B;
+        margin-bottom: 20px;
+        &.log{
+            @extend %font_u_400; // Смотреть файл _vars.scss
+            font-size: 16px;
+            line-height: 22px;
+            color: #3D405B;
+            margin-bottom: 34px;
+            margin-right: 10px;
+        }
+    }
+    &__btn{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        padding: 10px 62px;
+        background-color: #494C69;
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+}
+
+.orders-true{
+    &__box{
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        flex-wrap: wrap;
+    }
+    &__inner{
+        background-color: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(73, 76, 105, 0.1);
+        border-radius: 15px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 6px;
+        width: 416px;
+        margin-bottom: 20px;
+    }
+    &__title{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        font-size: 16px;
+        line-height: 140%;
+        color: #3D405B;
+        position: relative;
+        margin-bottom: 12px;
+        &::after{
+            content: url(../../images/arrow-right.svg);
+            position: absolute;
+            right: 0;
+        }
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 11px;
+    }
+    &__location,
+    &__time,
+    &__addres,
+    &__price,
+    &__bonus,
+    &__summ,
+    &__status-payment,
+    &__status-order,
+    &__location-span,
+    &__time-span,
+    &__addres-span,
+    &__price-span,
+    &__bonus-span,
+    &__summ-span,
+    &__status-payment-span,
+    &__status-order-span{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 14px;
+        line-height: 140%;
+        color: #696C87;
+    }
+    &__all-price,
+    &__all-price-span{
+        @extend %font_u_700; // Смотреть файл _vars.scss
+        font-size: 14px;
+        line-height: 140%;
+        color: #696C87;
+    }
+    &__status-payment-span{
+        color: #FF4016;
+        &.active{
+            color: #0CA48F;
+        }
+    }
+    &__status-order-span{
+        color: #DA9D41;
+        &.active{
+            color: #494C69; 
+        }
+    }
+    &__btn{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: #494C69;
+        border-radius: 4px;
+        text-align: center;
+        padding: 6px 126px;
+    }
+}
+
+.orders-detale{
+    margin-left: 30px;
+    &__body-1{
+        width: 820px;
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 7px;
+    }
+    &__location,
+    &__time,
+    &__addres,
+    &__price,
+    &__bonus,
+    &__summ,
+    &__status-payment,
+    &__status-order,
+    &__location-span,
+    &__time-span,
+    &__addres-span,
+    &__price-span,
+    &__bonus-span,
+    &__summ-span,
+    &__status-payment-span,
+    &__status-order-span{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 14px;
+        line-height: 140%;
+        color: #696C87;
+    }
+    &__all-price,
+    &__all-price-span{
+        @extend %font_u_700; // Смотреть файл _vars.scss
+        font-size: 14px;
+        line-height: 140%;
+        color: #696C87;
+    }
+    &__status-payment-span{
+        color: #FF4016;
+        &.active{
+            color: #0CA48F;
+        }
+    }
+    &__status-order-span{
+        color: #DA9D41;
+        &.active{
+            color: #494C69; 
+        }
+    }
+    &__btn{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: #494C69;
+        border-radius: 4px;
+        text-align: center;
+        padding: 6px 35px;
+    }
+    &__commetn-title{
+        margin-top: 15px;
+        margin-bottom: 5px;
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 14px;
+        line-height: 140%;
+        color: #696C87;
+    }
+    &__commetn{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-style: italic;
+        font-size: 14px;
+        line-height: 140%;
+        color: #696C87;
+    }
+    &__body-2{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    &__cards{
+        display: flex;
+        align-items: center;
+    }
+    &__card-box{
+        display: flex;
+        align-items: flex-start;
+        background-color: #FFFFFF;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        width: 275px;
+        padding: 9px;
+        margin-right: 5px;
+    }
+    &__card-content{
+        max-width: 167px;
+    }
+    &__card-img{
+        margin-right: 8px;
+        max-width: 80px;
+        height: auto;
+    }
+    &__card-title{
+        @extend %font_u_500; // Смотреть файл _vars.scss
+        font-size: 13px;
+        line-height: 110%;
+        color: #3D405B;
+        letter-spacing: -0.24px;
+        margin-bottom: 7px;
+    }
+    &__card-weight{
+        @extend %font_u_400; // Смотреть файл _vars.scss
+        font-size: 11px;
+        line-height: 110%;
+        color: #3D405B;
+        margin-bottom: 11px;
+    }
+    &__card-price,
+    &__card-number{
+        @extend %font_u_700; // Смотреть файл _vars.scss
+        font-size: 14px;
+        line-height: 140%;
+        color: #494C69;
+    }
+    &__card-info{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__body-3{
+        width: 820px;
+        margin-bottom: 15px;
+    }
+}
+

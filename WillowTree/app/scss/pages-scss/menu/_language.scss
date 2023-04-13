@@ -1,0 +1,53 @@
+// мова секція
+.language{
+    &__box{
+        margin-left: 30px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #F1F1F1;
+        width: 820px;
+        padding-left: 30px;
+    }
+    &__label{
+        @extend %font_u_400;// Смотреть файл _vars.scss
+        font-size: 16px;
+        line-height: 135%;
+        color: #3D405B;
+        cursor: pointer;
+    }
+    &__input{
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        clip: rect(0 0 0 0);
+        padding-left: 35px;
+        &:checked + .language__span::before{
+            content: '';
+            position: absolute;
+            width: 8.06px;
+            height: 8.06px;
+            border-radius: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            background: #494C69;
+        }
+        &:checked + .language__span{
+            border: 2px solid #494C69;
+        }
+    }
+    &__span{
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border: 2px solid #BDBECC;
+        margin-left: -35px;
+        border-radius: 100%;
+    }
+}
+// мова секція кінець
+
+.language-page__box-title{
+    display: none;
+}
